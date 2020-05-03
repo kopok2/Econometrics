@@ -1,0 +1,12 @@
+\contentsline {section}{\numberline {1}Wstęp}{1}% 
+\contentsline {section}{\numberline {2}Cel projektu}{1}% 
+\contentsline {section}{\numberline {3}Opis danych}{2}% 
+\contentsline {section}{\numberline {4}Dobór zmiennych do modelu}{2}% 
+\contentsline {section}{\numberline {5}Wybór postaci modelu}{2}% 
+\contentsline {section}{\numberline {6}Weryfikacja statystyczna modelu}{2}% 
+\contentsline {section}{\numberline {7}Prognoza}{2}% 
+\contentsline {section}{\numberline {8}Interpretacja}{2}% 
+\contentsline {section}{\numberline {9}Podsumowanie}{2}% 
+\contentsline {section}{\numberline {10}Spis tabel}{2}% 
+\contentsline {section}{\numberline {11}Spis rysunków}{2}% 
+\contentsline {section}{\numberline {12}Literatura}{2}% 
