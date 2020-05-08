@@ -2,6 +2,8 @@
 \usepackage{graphicx}
 \usepackage[utf8]{inputenc}
 \usepackage{polski}
+\usepackage[backend=biber]{biblatex}
+\addbibresource{bib_cite.bib}
 
 \begin{document}
 
@@ -9,16 +11,14 @@
 \author{Karol Oleszek}
 
 \maketitle
+\newpage
 \tableofcontents
-
+\newpage
 
 \section{Wstęp}
-To jest wstęp do projektu.
+Przewidywanie zmian cen akcji oraz innych instrumentów finansowych znajduje się w centrum zainteresowania inwestorów. Zmiany cen są podstawowym zjawiskiem powodującym bogacenie się lub ubożenie inwestora indywidualnego bądź instytucjonalnego, dlatego też próby zrozumienia i opisania reguł rządzących tym zjawiskiem są kluczowe dla podejmowania skutecznych decyzji o alokacji kapitału.
 
-\begin{equation}
-    \label{simple_equation}
-    \alpha = \sqrt{ \beta }
-\end{equation}
+Teoria rynków kapitałowyc proponuje wiele różnych wyjaśnień zmienności cen: hipoteza rynku efektywnego \textcite{Bachelier1900} zakłada, że ceny rynkowe akcji w danej chwili odzwierciedlają wszystkie dostępne informacje o spółce; autorzy i zwolennicy hipotezy krótkoterminową zmienność cen opisują jako losowy ruch wokół efektywnej wartości. 
 
 \section{Cel projektu}
 To jest cel projektu.
@@ -41,6 +41,8 @@ To jest cel projektu.
 
 \section{Spis rysunków}
 
+\newpage
 \section{Literatura}
+\printbibliography
 
 \end{document}
