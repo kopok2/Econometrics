@@ -3,7 +3,9 @@
 \usepackage[utf8]{inputenc}
 \usepackage{polski}
 \usepackage[backend=biber]{biblatex}
+\usepackage{indentfirst}
 \addbibresource{bib_cite.bib}
+
 
 \begin{document}
 
@@ -26,8 +28,39 @@ Do złożonego problemu jakim jest symulacja i prognostyka zachowania rynków ka
 
 Poniższa praca zawiera przekrojową regresję zmian cen akcji na rynku amerykańskim w 2019 z wykorzystaniem standardowych narzędzi ekonometrycznych. Zbiór danych służący do konstrukcji modelu zawiera dane z roku 2018, dotyczące sytuacji finansowych, kapitałowych i operacyjnych spółek, zawarte w formie wskaźników i pozycji ze sprawozdań finansowych.
 
+\newpage
 \section{Cel projektu}
-To jest cel projektu.
+Celem projektu jest wyznaczenie bazowego poziomu efektywności wyboru spółek, których akcje w nadchodzącym roku zyskają na wartości. Za wybór odpowiadał będzie model, który powstanie przy użyciu metody najmniejszych kwadratów i który będzie mógł służyć jako punkt odniesienia do badania efektywności innych metod predykcji.
+
+Efektywność prognostyczna modelu zostanie zbadana przy użyciu \textit{średniego błędu prognozy ex post}, danego wzorem:
+
+\[ ME = \frac{1}{s} \sum_{t=1}^{s} ( y_t - y_t^P ) \],
+
+Gdzie:
+
+~$s$ - ilość obserwacji w testowym zbiorze danych
+
+~$y_t$ - prawdziwa wartość zmiennej objaśnianej
+
+~$y_t^P$ - prognozowana wartość zmiennej objaśnianej
+
+\medskip
+
+Ponadto model posłuży do oceny wpływu informacji finansowych zawartych w publicznie dostepnych źródłach na przyszłą wartość spółek giełdowych. Ocena ta może być użyteczna przy podejmowaniu decyzji o tym, jakie dane zbierać na temat spółek w celu skutecznego przewidywania ich przyszłej wyceny.
+
+Miarą tej oceny będzie współczynnik determinacji ~$R^2$, dany wzorem:
+
+\[ R^2 = \frac{\sum_{t=1}^{n}(y_t^P-\overline{y})^2}{\sum_{t=1}^{n}(y_t-\overline{y})^2} \],
+
+Gdzie:
+
+~$n$ - ilość obserwacji w uczącym zbiorze danych
+
+~$y_t$ - prawdziwa wartość zmiennej objaśnianej
+
+~$y_t^P$ - prognozowana wartość zmiennej objaśnianej
+
+~$\overline{y}$ - średnia arytmetyczna zmiennej objaśnianej
 
 \section{Opis danych}
 
