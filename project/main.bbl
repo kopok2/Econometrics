@@ -38,8 +38,117 @@
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Annales scientifiques de l’É.N.S.}
-      \field{title}{Théorie de la Spélation}
+      \field{title}{Théorie de la Spéculation}
       \field{year}{1900}
+    \endentry
+    \entry{Capgemini2012}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=7473b077f4187b2262bbaffbf9741b60}{%
+           family={Capgemini},
+           familyi={C\bibinitperiod}}}%
+      }
+      \strng{namehash}{7473b077f4187b2262bbaffbf9741b60}
+      \strng{fullhash}{7473b077f4187b2262bbaffbf9741b60}
+      \strng{bibnamehash}{7473b077f4187b2262bbaffbf9741b60}
+      \strng{authorbibnamehash}{7473b077f4187b2262bbaffbf9741b60}
+      \strng{authornamehash}{7473b077f4187b2262bbaffbf9741b60}
+      \strng{authorfullhash}{7473b077f4187b2262bbaffbf9741b60}
+      \field{sortinit}{C}
+      \field{sortinithash}{4c244ceae61406cdc0cc2ce1cb1ff703}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{High Frequency Trading: Evolution and the Future}
+      \field{year}{2012}
+    \endentry
+    \entry{Cowles1932}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=da044688cb42be78a3eeae194fde317f}{%
+           family={Cowles},
+           familyi={C\bibinitperiod},
+           given={Alfred},
+           giveni={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{da044688cb42be78a3eeae194fde317f}
+      \strng{fullhash}{da044688cb42be78a3eeae194fde317f}
+      \strng{bibnamehash}{da044688cb42be78a3eeae194fde317f}
+      \strng{authorbibnamehash}{da044688cb42be78a3eeae194fde317f}
+      \strng{authornamehash}{da044688cb42be78a3eeae194fde317f}
+      \strng{authorfullhash}{da044688cb42be78a3eeae194fde317f}
+      \field{sortinit}{C}
+      \field{sortinithash}{4c244ceae61406cdc0cc2ce1cb1ff703}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Econometrica}
+      \field{title}{Can stock market forecasters forecast?}
+      \field{year}{1932}
+    \endentry
+    \entry{GCM2013}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=629b14c5ea148aa37b55502da39f116d}{%
+           family={Graham\bibnamedelimb Capital\bibnamedelima Management},
+           familyi={G\bibinitperiod\bibinitdelim C\bibinitperiod\bibinitdelim M\bibinitperiod},
+           given={L.P.},
+           giveni={L\bibinitperiod}}}%
+      }
+      \strng{namehash}{629b14c5ea148aa37b55502da39f116d}
+      \strng{fullhash}{629b14c5ea148aa37b55502da39f116d}
+      \strng{bibnamehash}{629b14c5ea148aa37b55502da39f116d}
+      \strng{authorbibnamehash}{629b14c5ea148aa37b55502da39f116d}
+      \strng{authornamehash}{629b14c5ea148aa37b55502da39f116d}
+      \strng{authorfullhash}{629b14c5ea148aa37b55502da39f116d}
+      \field{sortinit}{G}
+      \field{sortinithash}{62eb2aa29549e4fdbd3cb154ec5711cb}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Systematic Global Macro: Performance, Risk and Correlation Characteristics}
+      \field{year}{2013}
+    \endentry
+    \entry{ShenJiangZhang2012}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=15888bd63ef053ab599db1cc6a6e7010}{%
+           family={Shunrong\bibnamedelima Shen},
+           familyi={S\bibinitperiod\bibinitdelim S\bibinitperiod},
+           given={Tongda\bibnamedelima Zhang},
+           giveni={T\bibinitperiod\bibinitdelim Z\bibinitperiod},
+           suffix={Haomiao\bibnamedelima Jiang},
+           suffixi={H\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+      }
+      \strng{namehash}{15888bd63ef053ab599db1cc6a6e7010}
+      \strng{fullhash}{15888bd63ef053ab599db1cc6a6e7010}
+      \strng{bibnamehash}{15888bd63ef053ab599db1cc6a6e7010}
+      \strng{authorbibnamehash}{15888bd63ef053ab599db1cc6a6e7010}
+      \strng{authornamehash}{15888bd63ef053ab599db1cc6a6e7010}
+      \strng{authorfullhash}{15888bd63ef053ab599db1cc6a6e7010}
+      \field{sortinit}{S}
+      \field{sortinithash}{c319cff79d99c853d775f88277d4e45f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Stock Market Forecasting Using Machine Learning Algorithms}
+      \field{year}{2012}
+    \endentry
+    \entry{WangHoLin2018}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=884a3e9ebe8213340b7360dd814fd63f}{%
+           family={Zhaoxia\bibnamedelima Wang},
+           familyi={Z\bibinitperiod\bibinitdelim W\bibinitperiod},
+           given={Zhiping\bibnamedelima Lin},
+           giveni={Z\bibinitperiod\bibinitdelim L\bibinitperiod},
+           suffix={Seng-Beng\bibnamedelima Ho},
+           suffixi={S\bibinithyphendelim B\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
+      }
+      \strng{namehash}{884a3e9ebe8213340b7360dd814fd63f}
+      \strng{fullhash}{884a3e9ebe8213340b7360dd814fd63f}
+      \strng{bibnamehash}{884a3e9ebe8213340b7360dd814fd63f}
+      \strng{authorbibnamehash}{884a3e9ebe8213340b7360dd814fd63f}
+      \strng{authornamehash}{884a3e9ebe8213340b7360dd814fd63f}
+      \strng{authorfullhash}{884a3e9ebe8213340b7360dd814fd63f}
+      \field{sortinit}{Z}
+      \field{sortinithash}{8f7b480688e809b50b6f6577b16f3db5}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{IEEE International Conference on Data Mining}
+      \field{title}{Stock Market Prediction Analysis by Incorporating Social and News Opinion and Sentiment}
+      \field{year}{2018}
     \endentry
   \enddatalist
 \endrefsection

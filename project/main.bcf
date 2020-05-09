@@ -2131,6 +2131,16 @@
   <bcf:section number="0">
     <bcf:citekey order="1">Bachelier1900</bcf:citekey>
     <bcf:citekey order="2">Bachelier1900</bcf:citekey>
+    <bcf:citekey order="3">Cowles1932</bcf:citekey>
+    <bcf:citekey order="4">Cowles1932</bcf:citekey>
+    <bcf:citekey order="5">GCM2013</bcf:citekey>
+    <bcf:citekey order="6">GCM2013</bcf:citekey>
+    <bcf:citekey order="7">Capgemini2012</bcf:citekey>
+    <bcf:citekey order="8">Capgemini2012</bcf:citekey>
+    <bcf:citekey order="9">ShenJiangZhang2012</bcf:citekey>
+    <bcf:citekey order="10">ShenJiangZhang2012</bcf:citekey>
+    <bcf:citekey order="11">WangHoLin2018</bcf:citekey>
+    <bcf:citekey order="12">WangHoLin2018</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="nty">
