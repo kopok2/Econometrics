@@ -81,17 +81,81 @@ Dane zostały zebrane przy użyciu interfejsu programistycznego \textit{Financia
 Kategoryczna zmienna objaśniająca \textit{Sector}, która przyjmowałą 11 różnych wartości (Consumer Cyclical, Energy, Technology, Industrials, Financial Services, Basic Materials, Communication Services, Consumer Defensive, Healthcare, Real Estate, Utilities) została przekształcona na 10 zmiennych zero-jedynkowych. Po tej operacji zbiór danych składał się ze 188 zmiennych.
 
 \subsection{Zmienne objaśniające}
-fdasfa
+Zbiór danych składa się z grupy zmiennych opisujących realne wielkości ze sprawozdań finansowych wyrażone w dolarach amerykańskich np. zysk brutto, wydatki na badania i rozwój. Na drugą grupę zmiennych składają się wskażniki finansowe, będące często przekształconymi zmiennymi z pierwszej grupy, wyrażone jako stosunek różnych wielkości np. zysk na akcję, wzrost zysku w ciągu roku. Trzecia grupa zmiennych to przekształcona zmienna \textit{Sector}. Ze względu na liczbę zmiennych poniżej znajdują się jedynie opisy oraz statystyki zmiennych uwzględnionych w ostatecznym modelu. Pełna lista zmiennych wraz ze statystykami znajduje się w załączniku do pracy.
+
+\newpage
 \subsection{Rozkład zmiennej objaśnianej}
-fdasfads
+Zmienna objaśniana ~$Y$ to wyrażona w procentach zmiana ceny akcji spółki w roku 2019. Przyjmuje ona wartości -99,86\% do +3756,72\%. Większa część wartości jest większa od zera co wskazuje na pozytywną bazową efektywność tzw. strategii \textit{buy and hold}, która polega na zakupie akcji, a następnie oczekiwaniu na wzrost jej wartości.
+
+\begin{table}[h!]
+    \begin{center}
+    \begin{tabular}{|c | c|} 
+    \hline
+    Statystyka & Wartość \\
+    \hline\hline
+    Średnia arytmetyczna & 21,15 \\ 
+    \hline
+    Odchylenie standardowe & 84,93 \\
+    \hline
+    Kwartyl dolny & -9,30 \\
+    \hline
+    Mediana & 17,83 \\
+    \hline
+    Kwartyl górny & 40,92 \\
+    \hline
+    Wartość najmniejsza & -99,86 \\
+    \hline
+    Wartość największa & 3756,71 \\
+    \hline
+   \end{tabular}
+    \end{center}
+   \caption{Statystyki - zmienna objaśniana}
+\end{table}
+
+\begin{figure}[h!]
+    \includegraphics[width=\linewidth]{source/YHistogram.png}
+    \caption{Histogram zmiennej objaśnianej}
+\end{figure}
+
 \newpage
 \subsection{Korelacja}
-To jest tekst o korelacji.
+Korelacja zmiennej objaśnianej ze zmiennymi objaśnianymi jest bardzo słaba, co osłabia możliwości prognostyczne modelu.
+\begin{table}[h!]
+    \begin{center}
+    \begin{tabular}{|c | c|} 
+    \hline
+    Statystyka & Wartość \\
+    \hline\hline
+    Średnia arytmetyczna & 0.0006535276131026212 \\ 
+    \hline
+    Odchylenie standardowe & 0.01430737685985159 \\
+    \hline
+    Kwartyl dolny & -0.006560508005214499 \\
+    \hline
+    Mediana & 0.0009029552423272379 \\
+    \hline
+    Kwartyl górny & 0.008516164727314403 \\
+    \hline
+    Wartość najmniejsza & -0.07707504123521973 \\
+    \hline
+    Wartość największa & 0.04058496958769639 \\
+    \hline
+    \end{tabular}
+    \end{center}
+   \caption{Korelacja zmiennej objaśnianej ze zmiennymi objaśnianymi}
+\end{table}
+
+\begin{figure}[h!]
+    \includegraphics[width=\linewidth]{source/CorrHist.png}
+    \caption{Histogram korelacji zmiennej objaśnianej ze zmiennymi objaśnianymi}
+\end{figure}
+
+\newpage
+Korelacja pomiędzy niektórymi zmiennymi objaśniającymi jest silna, co można wyjaśnić zależnościami pomiędzy rozmiarem spółki, a wielkościami w \textit{10-K Form}. Nie wszystkie zmienne objaśniające mogą znaleźć się w modelu, ponieważ spowodowałoby to wystąpienie zjawiska współliniowości.
 \begin{figure}[h!]
     \includegraphics[width=\linewidth]{source/CorrelationMatrix.png}
     \caption{Macierz korelacji}
 \end{figure}
-fdasfda
 
 \newpage
 \section{Dobór zmiennych do modelu}
