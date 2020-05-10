@@ -29,7 +29,7 @@ if __name__ == '__main__':
     data.drop(data.columns[nacol], axis=1, inplace=True)
 
     print("Removing unneeded columns...")
-    data.drop(['Unnamed: 0', 'Class'], axis=1, inplace=True)
+    data.drop(['Unnamed: 0', 'Class', 'operatingProfitMargin'], axis=1, inplace=True)
 
     print("Renaming target column...")
     data.rename(columns={'2019 PRICE VAR [%]': 'PriceChange'}, inplace=True)

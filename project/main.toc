@@ -16,26 +16,26 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {3.3}Transformacja zmiennej kategorycznej}{5}{subsection.3.3}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.4}Zmienne obja\IeC {\'s}niaj\IeC {\k a}ce}{6}{subsection.3.4}% 
+\contentsline {subsection}{\numberline {3.4}Zmienne obja\IeC {\'s}niaj\IeC {\k a}ce}{5}{subsection.3.4}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.5}Rozk\IeC {\l }ad zmiennej obja\IeC {\'s}nianej}{6}{subsection.3.5}% 
+\contentsline {subsection}{\numberline {3.5}Rozk\IeC {\l }ad zmiennej obja\IeC {\'s}nianej}{5}{subsection.3.5}% 
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {3.6}Korelacja}{6}{subsection.3.6}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4}Dob\IeC {\'o}r zmiennych do modelu}{6}{section.4}% 
+\contentsline {section}{\numberline {4}Dob\IeC {\'o}r zmiennych do modelu}{7}{section.4}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5}Wyb\IeC {\'o}r postaci modelu}{6}{section.5}% 
+\contentsline {section}{\numberline {5}Wyb\IeC {\'o}r postaci modelu}{7}{section.5}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6}Weryfikacja statystyczna modelu}{6}{section.6}% 
+\contentsline {section}{\numberline {6}Weryfikacja statystyczna modelu}{7}{section.6}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7}Prognoza}{6}{section.7}% 
+\contentsline {section}{\numberline {7}Prognoza}{7}{section.7}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {8}Interpretacja}{6}{section.8}% 
+\contentsline {section}{\numberline {8}Interpretacja}{7}{section.8}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {9}Podsumowanie}{6}{section.9}% 
+\contentsline {section}{\numberline {9}Podsumowanie}{7}{section.9}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {10}Spis tabel}{6}{section.10}% 
+\contentsline {section}{\numberline {10}Spis tabel}{8}{section.10}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {11}Spis rysunk\IeC {\'o}w}{6}{section.11}% 
+\contentsline {section}{\numberline {11}Spis rysunk\IeC {\'o}w}{9}{section.11}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {12}Literatura}{7}{section.12}% 
+\contentsline {section}{\numberline {12}Literatura}{10}{section.12}% 

@@ -156,6 +156,15 @@ OUTPUT /home/karol_oleszek/Projects/Econometrics/Econometrics/project/main.toc
 INPUT /usr/share/texmf-dist/fonts/tfm/public/pl/plbx12.tfm
 INPUT /usr/share/texmf-dist/fonts/tfm/public/pl/plti10.tfm
 INPUT /usr/share/texmf-dist/fonts/tfm/public/pl/plti8.tfm
+INPUT /home/karol_oleszek/Projects/Econometrics/Econometrics/project/source/CorrelationMatrix.png
+INPUT /home/karol_oleszek/Projects/Econometrics/Econometrics/project/source/CorrelationMatrix.png
+INPUT /home/karol_oleszek/Projects/Econometrics/Econometrics/project/source/CorrelationMatrix.png
+INPUT /home/karol_oleszek/Projects/Econometrics/Econometrics/project/main.lot
+INPUT /home/karol_oleszek/Projects/Econometrics/Econometrics/project/main.lot
+OUTPUT /home/karol_oleszek/Projects/Econometrics/Econometrics/project/main.lot
+INPUT /home/karol_oleszek/Projects/Econometrics/Econometrics/project/main.lof
+INPUT /home/karol_oleszek/Projects/Econometrics/Econometrics/project/main.lof
+OUTPUT /home/karol_oleszek/Projects/Econometrics/Econometrics/project/main.lof
 INPUT /home/karol_oleszek/Projects/Econometrics/Econometrics/project/main.aux
 INPUT /home/karol_oleszek/Projects/Econometrics/Econometrics/project/main.out
 INPUT /home/karol_oleszek/Projects/Econometrics/Econometrics/project/main.out
