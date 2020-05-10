@@ -60,6 +60,27 @@
       \field{title}{High Frequency Trading: Evolution and the Future}
       \field{year}{2012}
     \endentry
+    \entry{Carbone2019}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=f9ceb854901a5de1dfeb1051d761ba9b}{%
+           family={Carbone},
+           familyi={C\bibinitperiod},
+           given={Nicolas},
+           giveni={N\bibinitperiod}}}%
+      }
+      \strng{namehash}{f9ceb854901a5de1dfeb1051d761ba9b}
+      \strng{fullhash}{f9ceb854901a5de1dfeb1051d761ba9b}
+      \strng{bibnamehash}{f9ceb854901a5de1dfeb1051d761ba9b}
+      \strng{authorbibnamehash}{f9ceb854901a5de1dfeb1051d761ba9b}
+      \strng{authornamehash}{f9ceb854901a5de1dfeb1051d761ba9b}
+      \strng{authorfullhash}{f9ceb854901a5de1dfeb1051d761ba9b}
+      \field{sortinit}{C}
+      \field{sortinithash}{4c244ceae61406cdc0cc2ce1cb1ff703}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{200+ Financial Indicators of US stocks (2014-2018)}
+      \field{year}{2019}
+    \endentry
     \entry{Cowles1932}{misc}{}
       \name{author}{1}{}{%
         {{hash=da044688cb42be78a3eeae194fde317f}{%

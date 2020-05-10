@@ -4,6 +4,8 @@
 \usepackage{polski}
 \usepackage[backend=biber]{biblatex}
 \usepackage{indentfirst}
+\usepackage{hyperref}
+
 \addbibresource{bib_cite.bib}
 
 
@@ -15,8 +17,8 @@
 \maketitle
 \newpage
 \tableofcontents
-\newpage
 
+\newpage
 \section{Wstęp}
 Przewidywanie zmian cen akcji oraz innych instrumentów finansowych znajduje się w centrum zainteresowania inwestorów. Zmiany cen są podstawowym zjawiskiem powodującym bogacenie się lub ubożenie inwestora indywidualnego bądź instytucjonalnego, dlatego też próby zrozumienia i opisania reguł rządzących tym zjawiskiem są kluczowe dla podejmowania skutecznych decyzji o alokacji kapitału.
 
@@ -30,6 +32,8 @@ Poniższa praca zawiera przekrojową regresję zmian cen akcji na rynku ameryka�
 
 \newpage
 \section{Cel projektu}
+
+\subsection{Model wyboru akcji do celów inwestycyjnych}
 Celem projektu jest wyznaczenie bazowego poziomu efektywności wyboru spółek, których akcje w nadchodzącym roku zyskają na wartości. Za wybór odpowiadał będzie model, który powstanie przy użyciu metody najmniejszych kwadratów i który będzie mógł służyć jako punkt odniesienia do badania efektywności innych metod predykcji.
 
 Efektywność prognostyczna modelu zostanie zbadana przy użyciu \textit{średniego błędu prognozy ex post}, danego wzorem:
@@ -46,6 +50,7 @@ Gdzie:
 
 \medskip
 
+\subsection{Zbadanie zależności pomiędzy zmianą cen, a informacjami finansowymi}
 Ponadto model posłuży do oceny wpływu informacji finansowych zawartych w publicznie dostepnych źródłach na przyszłą wartość spółek giełdowych. Ocena ta może być użyteczna przy podejmowaniu decyzji o tym, jakie dane zbierać na temat spółek w celu skutecznego przewidywania ich przyszłej wyceny.
 
 Miarą tej oceny będzie współczynnik determinacji ~$R^2$, dany wzorem:
@@ -62,7 +67,23 @@ Gdzie:
 
 ~$\overline{y}$ - średnia arytmetyczna zmiennej objaśnianej
 
+\newpage
 \section{Opis danych}
+
+\subsection{Zbiór danych}
+Zbiór danych użyty w projekcie pochodzi z internetowej platformy \href{https://www.kaggle.com/cnic92/200-financial-indicators-of-us-stocks-20142018}{Kaggle} (\textcite{Carbone2019}). Zawiera on zmienną objaśnianą ~$Y$ - procentową zmianę ceny akcji danej spółki w 2019 roku, oraz zmienne objaśniające ~$X_i,  i=1\dots k$ - k-1 wskaźników finansowych i pozycji z formularza \textit{10-K}\footnote{\textit{Form 10-K} jest to coroczne podsumowanie finansowe składane przez amerykańskie spółki giełdowe do \textit{U.S. Securities and Exchange Commission}, federalnej agencji nadzoru finansowego.}, a także zmiennej kategorycznej oznaczającej sektor gospodarki rozważanej spółki.
+
+\subsection{Usuwanie braków danych}
+Dane zostały zebrane przy użyciu interfejsu programistycznego \textit{Financial Modeling Prep API} i zawierały pewne braki wynikające z różnic w dokumentach źródłowych. Dla celów analizy usunięte zostały wszystkie obserwacje, w których brakowało więcej niż 50 wartości oraz wszystkie zmienne, w których co najmniej 10\% obserwacji nie miało przypisanej wartości. Po tej transformacji, w zbiorze danych pozostało 4122 obserwacji oraz 179 zmiennych (4392 x 222, 9,98\% braków przed transformacją). Wciąż brakujące 0,82\% wartości zostało zastąpionych średnimi arytmetycznymi odpowiednich zmiennych.
+
+\subsection{Transformacja zmiennej kategorycznej}
+Kategoryczna zmienna objaśniająca \textit{Sector}, która przyjmowałą 11 różnych wartości (Consumer Cyclical, Energy, Technology, Industrials, Financial Services, Basic Materials, Communication Services, Consumer Defensive, Healthcare, Real Estate, Utilities) została przekształcona na 10 zmiennych zero-jedynkowych. Po tej operacji zbiór danych składał się ze 188 zmiennych.
+
+\subsection{Zmienne objaśniające}
+
+\subsection{Rozkład zmiennej objaśnianej}
+
+\subsection{Korelacja}
 
 \section{Dobór zmiennych do modelu}
 
