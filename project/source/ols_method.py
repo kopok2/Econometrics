@@ -10,6 +10,11 @@ Copyright 2020 Karol Oleszek
 import numpy as np
 
 
+def same_sgn(first, second):
+    """Check whether both a and b have the same sign."""
+    return (first < 0 and second < 0) or (first > 0 and second > 0)
+
+
 def statistical_test(method):
     """
     Statistical test counter.
@@ -64,8 +69,9 @@ class OLS:
         """
         Fit model parameters with initial data.
         """
-        self.params = np.linalg.inv(self.x_data.T @ self.x_data) @ self.x_data.T @ self.y_data
-        self.residuals = self.y_data - self.predict(self.x_data)
+        data = np.c_[np.ones(self.x_data.shape[0]), self.x_data]
+        self.params = np.linalg.inv(data.T @ data) @ data.T @ self.y_data
+        self.residuals = self.y_data - self.predict(data)
 
     def predict(self, x_data):
         """
@@ -94,11 +100,18 @@ class OLS:
 
     @statistical_test
     def coincidence_test(self):
-        corr = np.corrcoef(np.c_[self.x_data, self.y_data].T)
-        print(corr)
+        res = True
+        for i in range(self.x_data.shape[1]):
+            correlation = np.corrcoef(self.x_data[:, i], self.y_data)[0][1]
+            param = self.params[i + 1]
+            if not same_sgn(correlation, param):
+                res = False
+                break
+        return res
 
     @statistical_test
     def catalizator_test(self):
+        corr = np.corrcoef(self.x_data.T)
         return False
 
     @statistical_test
@@ -140,7 +153,7 @@ if __name__ == '__main__':
         [2, 2, 3],
         [3, 2, 4],
         [4, 2, 5],
-        [5, 2, 1]
+        [5, 3, 1]
     ])
     y = np.array([
         1, 2, 3, 4, 5
