@@ -6,9 +6,10 @@
 \usepackage{indentfirst}
 \usepackage{hyperref}
 \usepackage{graphicx}
+\usepackage{mathrsfs}
+\usepackage{amssymb}
 
 \addbibresource{bib_cite.bib}
-
 
 \begin{document}
 
@@ -81,7 +82,7 @@ Dane zostały zebrane przy użyciu interfejsu programistycznego \textit{Financia
 Kategoryczna zmienna objaśniająca \textit{Sector}, która przyjmowałą 11 różnych wartości (Consumer Cyclical, Energy, Technology, Industrials, Financial Services, Basic Materials, Communication Services, Consumer Defensive, Healthcare, Real Estate, Utilities) została przekształcona na 10 zmiennych zero-jedynkowych. Po tej operacji zbiór danych składał się ze 188 zmiennych.
 
 \subsection{Zmienne objaśniające}
-Zbiór danych składa się z grupy zmiennych opisujących realne wielkości ze sprawozdań finansowych wyrażone w dolarach amerykańskich np. zysk brutto, wydatki na badania i rozwój. Na drugą grupę zmiennych składają się wskażniki finansowe, będące często przekształconymi zmiennymi z pierwszej grupy, wyrażone jako stosunek różnych wielkości np. zysk na akcję, wzrost zysku w ciągu roku. Trzecia grupa zmiennych to przekształcona zmienna \textit{Sector}. Ze względu na liczbę zmiennych poniżej znajdują się jedynie opisy oraz statystyki zmiennych uwzględnionych w ostatecznym modelu. Pełna lista zmiennych wraz ze statystykami znajduje się w załączniku do pracy.
+Zbiór danych składa się z grupy zmiennych opisujących realne wielkości ze sprawozdań finansowych wyrażone w dolarach amerykańskich np. zysk brutto, wydatki na badania i rozwój. Na drugą grupę zmiennych składają się wskażniki finansowe, będące często przekształconymi zmiennymi z pierwszej grupy, wyrażone jako stosunek różnych wielkości np. zysk na akcję, wzrost zysku w ciągu roku. Trzecia grupa zmiennych to przekształcona zmienna \textit{Sector}. Ze względu na liczbę zmiennych pełna lista zmiennych wraz ze statystykami znajduje się w załączniku do pracy.
 
 \newpage
 \subsection{Rozkład zmiennej objaśnianej}
@@ -157,12 +158,89 @@ Korelacja pomiędzy niektórymi zmiennymi objaśniającymi jest silna, co można
     \caption{Macierz korelacji}
 \end{figure}
 
-\newpage
-\section{Dobór zmiennych do modelu}
-fadsfda
-\section{Wybór postaci modelu}
+\subsection{Podział zbioru danych}
+Zbiór danych podzielony jest na dane treningowe(90\%) użyte do estymacji parametrów modelów oraz dane testowe(10\%) służące do oceny prognozy \textit{ex post}.
 
-\section{Weryfikacja statystyczna modelu}
+\newpage
+\section{Wybór postaci modelu oraz dobór zmiennych do modelu}
+\subsection{Specyfikacja kryteriów}
+Praca odpowiada na dwa pytania:
+\begin{enumerate}
+    \item Jaka jest bazowa efektywność predykcji?
+    \item Jaki jest wpływ informacji zawartych w rozważanych danych na zmiany cen akcji?
+\end{enumerate}
+
+Odpowiedzią na pierwsze pytanie jest efektywność modelu o najlepszych właściwościach prognostycznych.
+
+Odpowiedzią na drugie pytanie jest ocena współczynnika determinacji poprawnie zweryfikowanego modelu ekonometrycznego.
+
+\subsection{Rozważana klasa funkcji}
+Modele wybrane są z klasy funkcji dopuszczalnych ~$\mathscr{F}: \mathbb{R^K\to R}$,
+gdzie K: liczba zmiennych w modelu.
+
+Funkcje przyjmują analityczną postać:
+
+~$\hat{y}=a_0+a_1*X_1+...+a_k*X_k$;
+
+parametry szacowane są przy użyciu metody najmniejszych kwadratów.
+
+Ze względu na potencjalnie nielinowy charakter zależności rozważony został zbiór danych rozszerzony o przetransformowane zmienne: ~$e^{X_i}, X_i^2, \frac{1}{1+X_i}$ o łącznym rozmiarze 4392 x 888. Dalsze rozszerzanie zbioru danych osłabiło by stabilność numeryczną modeli i nadmiernie zwiększyło by wymiar Wapnika-Czerwonienisa, co osłabiło by możliwości generalizacji przez modele (\textcite{Kaminski2017}).
+
+\newpage
+\subsection{Rozważany podzbiór funkcji}
+Ze względu na ilość zmiennych, użycie metody o wykładniczej złożoności obliczeniowej, np. metody Hellwiga, byłoby nieefektywne. W związku z tym rozważany jest K-elementowy zbiór funkcji wyłoniony przy użyciu uproszczonej \textit{metody krokowej wstecz}. Rozważany jest model ze wszystkimi zmiennymi, a następnie z modelu usuwana jest najmniej istotna statystycznie zmienna. Procedura jest powtarzana dopóki w modelu jest więcej niż jedna zmienna. Dla celów stworzenia podzbioru funkcji nie jest sprawdzana normalność rozkładu resztowego.
+
+\subsection{Kryterium wyboru modelu prognostycznego}
+Spośród rozważanego podzbioru funkcji wybrana jest funkcja z najmniejszym \textit{absolutnym błędem prognozy ex post} oszacowanym przy użyciu sprawdzianu krzyżowego na danych treningowych.
+
+Sprawdzian krzyżowy polega na podziale zboriu danych na J podzbiorów, a następnie wykonaniu J ocen błędu prognozy(za każdym razem inny podzbiór jest uznawany za testowy, J-1 podzbiorów treningowych) i obliczeniu ich średniej.
+
+\[\hat{ME}= \frac{1}{J} \sum_{t=1}^{J} ( ME_i ) \]
+
+\subsection{Kryterium wyboru modelu analitycznego}
+Spośród rozważanego podzbioru funkcji wybrana jest funkcja z najwyższym współczynnikiem determinacji ~$R^2$, która została poprawnie zweryfikowana. W przypadku wystąpienia niepożadanych zjawisk w modelu, rozważany podzbiór funkcji powiększony zostaje o model z zastosowanymi stosownymi korektami.
+
+
+\newpage
+\section{Weryfikacja poprawności modelu}
+Poniżej opisane są procedury weryfikacji poprawności modelu oszacowanego metodą najmniejszych kwadratów.
+
+\subsection{Współliniowość}
+Wyznaczamy K modeli MNK, gdzie zmienną objaśnianą jest jedna ze zmiennych objaśniających, a zmiennymi objaśniającymi pozostałe zmienne. Wyznaczamy K współczynników determinacji; jeżeli którykolwiek z nich większy jest niż 0,9 , to w modelu występuje niepożądane zjawisko współiniowości zmiennych.
+
+\subsection{Koincydencja}
+Jeżeli dla każdego i=1..K:
+\[sgn(R_i) = sgn(a_i)\],
+
+gdzie:
+
+~$R_i$: korelacja pomiędzy zmienną objaśnianą, a i-tą zmienną objaśniającą.
+
+~$a_I$: oszacowany i-ty parametr modelu.
+
+, to model jest koincydentny. Koincydencja modelu jest pożądaną cechą.
+
+\subsection{Katalizatory}
+
+\subsection{Normalność rozkładu reszt}
+
+\subsection{Istotność zmiennych objaśniających}
+
+\subsection{Istotność współczynnika determinacji}
+
+\subsection{Liniowość postaci modelu}
+
+\subsection{Homoskedastyczność}
+
+\subsection{Stabilność postaci analitycznej}
+
+\subsection{Stabilność parametrów modelu}
+
+\subsection{Autokorelacja składnika losowego}
+
+\section{Korekty}
+
+\section{Wybrane modele}
 
 \section{Prognoza}
 
@@ -172,16 +250,18 @@ fadsfda
 
 \newpage
 \section{Spis tabel}
+\renewcommand\listtablename{}
 \listoftables
 
 
 \newpage
 \section{Spis rysunków}
+\renewcommand\listfigurename{}
 \listoffigures
 
 
 \newpage
 \section{Literatura}
-\printbibliography
+\printbibliography[heading=none]
 
 \end{document}

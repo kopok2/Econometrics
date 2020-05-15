@@ -9,12 +9,30 @@
 \BOOKMARK [2][-]{subsection.3.4}{Zmienne objasniajace}{section.3}% 9
 \BOOKMARK [2][-]{subsection.3.5}{Rozk\233ad zmiennej objasnianej}{section.3}% 10
 \BOOKMARK [2][-]{subsection.3.6}{Korelacja}{section.3}% 11
-\BOOKMARK [1][-]{section.4}{Dob\363r zmiennych do modelu}{}% 12
-\BOOKMARK [1][-]{section.5}{Wyb\363r postaci modelu}{}% 13
-\BOOKMARK [1][-]{section.6}{Weryfikacja statystyczna modelu}{}% 14
-\BOOKMARK [1][-]{section.7}{Prognoza}{}% 15
-\BOOKMARK [1][-]{section.8}{Interpretacja}{}% 16
-\BOOKMARK [1][-]{section.9}{Podsumowanie}{}% 17
-\BOOKMARK [1][-]{section.10}{Spis tabel}{}% 18
-\BOOKMARK [1][-]{section.11}{Spis rysunk\363w}{}% 19
-\BOOKMARK [1][-]{section.12}{Literatura}{}% 20
+\BOOKMARK [2][-]{subsection.3.7}{Podzia\233 zbioru danych}{section.3}% 12
+\BOOKMARK [1][-]{section.4}{Wyb\363r postaci modelu oraz dob\363r zmiennych do modelu}{}% 13
+\BOOKMARK [2][-]{subsection.4.1}{Specyfikacja kryteri\363w}{section.4}% 14
+\BOOKMARK [2][-]{subsection.4.2}{Rozwazana klasa funkcji}{section.4}% 15
+\BOOKMARK [2][-]{subsection.4.3}{Rozwazany podzbi\363r funkcji}{section.4}% 16
+\BOOKMARK [2][-]{subsection.4.4}{Kryterium wyboru modelu prognostycznego}{section.4}% 17
+\BOOKMARK [2][-]{subsection.4.5}{Kryterium wyboru modelu analitycznego}{section.4}% 18
+\BOOKMARK [1][-]{section.5}{Weryfikacja poprawnosci modelu}{}% 19
+\BOOKMARK [2][-]{subsection.5.1}{Wsp\363\233liniowosc}{section.5}% 20
+\BOOKMARK [2][-]{subsection.5.2}{Koincydencja}{section.5}% 21
+\BOOKMARK [2][-]{subsection.5.3}{Katalizatory}{section.5}% 22
+\BOOKMARK [2][-]{subsection.5.4}{Normalnosc rozk\233adu reszt}{section.5}% 23
+\BOOKMARK [2][-]{subsection.5.5}{Istotnosc zmiennych objasniajacych}{section.5}% 24
+\BOOKMARK [2][-]{subsection.5.6}{Istotnosc wsp\363\233czynnika determinacji}{section.5}% 25
+\BOOKMARK [2][-]{subsection.5.7}{Liniowosc postaci modelu}{section.5}% 26
+\BOOKMARK [2][-]{subsection.5.8}{Homoskedastycznosc}{section.5}% 27
+\BOOKMARK [2][-]{subsection.5.9}{Stabilnosc postaci analitycznej}{section.5}% 28
+\BOOKMARK [2][-]{subsection.5.10}{Stabilnosc parametr\363w modelu}{section.5}% 29
+\BOOKMARK [2][-]{subsection.5.11}{Autokorelacja sk\233adnika losowego}{section.5}% 30
+\BOOKMARK [1][-]{section.6}{Korekty}{}% 31
+\BOOKMARK [1][-]{section.7}{Wybrane modele}{}% 32
+\BOOKMARK [1][-]{section.8}{Prognoza}{}% 33
+\BOOKMARK [1][-]{section.9}{Interpretacja}{}% 34
+\BOOKMARK [1][-]{section.10}{Podsumowanie}{}% 35
+\BOOKMARK [1][-]{section.11}{Spis tabel}{}% 36
+\BOOKMARK [1][-]{section.12}{Spis rysunk\363w}{}% 37
+\BOOKMARK [1][-]{section.13}{Literatura}{}% 38

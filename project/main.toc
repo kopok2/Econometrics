@@ -1,41 +1,77 @@
 \boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1}Wst\IeC {\k e}p}{3}{section.1}% 
+\contentsline {section}{\numberline {1}Wst\IeC {\k e}p}{4}{section.1}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2}Cel projektu}{4}{section.2}% 
+\contentsline {section}{\numberline {2}Cel projektu}{5}{section.2}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.1}Model wyboru akcji do cel\IeC {\'o}w inwestycyjnych}{4}{subsection.2.1}% 
+\contentsline {subsection}{\numberline {2.1}Model wyboru akcji do cel\IeC {\'o}w inwestycyjnych}{5}{subsection.2.1}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.2}Zbadanie zale\IeC {\.z}no\IeC {\'s}ci pomi\IeC {\k e}dzy zmian\IeC {\k a} cen, a informacjami finansowymi}{4}{subsection.2.2}% 
+\contentsline {subsection}{\numberline {2.2}Zbadanie zale\IeC {\.z}no\IeC {\'s}ci pomi\IeC {\k e}dzy zmian\IeC {\k a} cen, a informacjami finansowymi}{5}{subsection.2.2}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3}Opis danych}{5}{section.3}% 
+\contentsline {section}{\numberline {3}Opis danych}{6}{section.3}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.1}Zbi\IeC {\'o}r danych}{5}{subsection.3.1}% 
+\contentsline {subsection}{\numberline {3.1}Zbi\IeC {\'o}r danych}{6}{subsection.3.1}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.2}Usuwanie brak\IeC {\'o}w danych}{5}{subsection.3.2}% 
+\contentsline {subsection}{\numberline {3.2}Usuwanie brak\IeC {\'o}w danych}{6}{subsection.3.2}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.3}Transformacja zmiennej kategorycznej}{5}{subsection.3.3}% 
+\contentsline {subsection}{\numberline {3.3}Transformacja zmiennej kategorycznej}{6}{subsection.3.3}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.4}Zmienne obja\IeC {\'s}niaj\IeC {\k a}ce}{5}{subsection.3.4}% 
+\contentsline {subsection}{\numberline {3.4}Zmienne obja\IeC {\'s}niaj\IeC {\k a}ce}{6}{subsection.3.4}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.5}Rozk\IeC {\l }ad zmiennej obja\IeC {\'s}nianej}{6}{subsection.3.5}% 
+\contentsline {subsection}{\numberline {3.5}Rozk\IeC {\l }ad zmiennej obja\IeC {\'s}nianej}{7}{subsection.3.5}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.6}Korelacja}{7}{subsection.3.6}% 
+\contentsline {subsection}{\numberline {3.6}Korelacja}{8}{subsection.3.6}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4}Dob\IeC {\'o}r zmiennych do modelu}{9}{section.4}% 
+\contentsline {subsection}{\numberline {3.7}Podzia\IeC {\l } zbioru danych}{9}{subsection.3.7}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5}Wyb\IeC {\'o}r postaci modelu}{9}{section.5}% 
+\contentsline {section}{\numberline {4}Wyb\IeC {\'o}r postaci modelu oraz dob\IeC {\'o}r zmiennych do modelu}{10}{section.4}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6}Weryfikacja statystyczna modelu}{9}{section.6}% 
+\contentsline {subsection}{\numberline {4.1}Specyfikacja kryteri\IeC {\'o}w}{10}{subsection.4.1}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7}Prognoza}{9}{section.7}% 
+\contentsline {subsection}{\numberline {4.2}Rozwa\IeC {\.z}ana klasa funkcji}{10}{subsection.4.2}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {8}Interpretacja}{9}{section.8}% 
+\contentsline {subsection}{\numberline {4.3}Rozwa\IeC {\.z}any podzbi\IeC {\'o}r funkcji}{11}{subsection.4.3}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {9}Podsumowanie}{9}{section.9}% 
+\contentsline {subsection}{\numberline {4.4}Kryterium wyboru modelu prognostycznego}{11}{subsection.4.4}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {10}Spis tabel}{10}{section.10}% 
+\contentsline {subsection}{\numberline {4.5}Kryterium wyboru modelu analitycznego}{11}{subsection.4.5}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {11}Spis rysunk\IeC {\'o}w}{11}{section.11}% 
+\contentsline {section}{\numberline {5}Weryfikacja poprawno\IeC {\'s}ci modelu}{12}{section.5}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {12}Literatura}{12}{section.12}% 
+\contentsline {subsection}{\numberline {5.1}Wsp\IeC {\'o}\IeC {\l }liniowo\IeC {\'s}\IeC {\'c}}{12}{subsection.5.1}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.2}Koincydencja}{12}{subsection.5.2}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.3}Katalizatory}{13}{subsection.5.3}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.4}Normalno\IeC {\'s}\IeC {\'c} rozk\IeC {\l }adu reszt}{13}{subsection.5.4}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.5}Istotno\IeC {\'s}\IeC {\'c} zmiennych obja\IeC {\'s}niaj\IeC {\k a}cych}{13}{subsection.5.5}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.6}Istotno\IeC {\'s}\IeC {\'c} wsp\IeC {\'o}\IeC {\l }czynnika determinacji}{13}{subsection.5.6}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.7}Liniowo\IeC {\'s}\IeC {\'c} postaci modelu}{13}{subsection.5.7}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.8}Homoskedastyczno\IeC {\'s}\IeC {\'c}}{13}{subsection.5.8}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.9}Stabilno\IeC {\'s}\IeC {\'c} postaci analitycznej}{13}{subsection.5.9}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.10}Stabilno\IeC {\'s}\IeC {\'c} parametr\IeC {\'o}w modelu}{13}{subsection.5.10}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.11}Autokorelacja sk\IeC {\l }adnika losowego}{13}{subsection.5.11}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {6}Korekty}{13}{section.6}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {7}Wybrane modele}{13}{section.7}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {8}Prognoza}{13}{section.8}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {9}Interpretacja}{13}{section.9}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {10}Podsumowanie}{13}{section.10}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {11}Spis tabel}{14}{section.11}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {12}Spis rysunk\IeC {\'o}w}{15}{section.12}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {13}Literatura}{16}{section.13}% 

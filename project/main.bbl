@@ -124,6 +124,27 @@
       \field{title}{Systematic Global Macro: Performance, Risk and Correlation Characteristics}
       \field{year}{2013}
     \endentry
+    \entry{Kaminski2017}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=a14f03f43b21a678bf3252a26361a727}{%
+           family={Kamiński},
+           familyi={K\bibinitperiod},
+           given={Bogumił},
+           giveni={B\bibinitperiod}}}%
+      }
+      \strng{namehash}{a14f03f43b21a678bf3252a26361a727}
+      \strng{fullhash}{a14f03f43b21a678bf3252a26361a727}
+      \strng{bibnamehash}{a14f03f43b21a678bf3252a26361a727}
+      \strng{authorbibnamehash}{a14f03f43b21a678bf3252a26361a727}
+      \strng{authornamehash}{a14f03f43b21a678bf3252a26361a727}
+      \strng{authorfullhash}{a14f03f43b21a678bf3252a26361a727}
+      \field{sortinit}{K}
+      \field{sortinithash}{d3edc18d54b9438a72c24c925bfb38f4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Teoria uczenia statystycznego z perspektywy ekonometryka}
+      \field{year}{2017}
+    \endentry
     \entry{ShenJiangZhang2012}{misc}{}
       \name{author}{1}{}{%
         {{hash=15888bd63ef053ab599db1cc6a6e7010}{%

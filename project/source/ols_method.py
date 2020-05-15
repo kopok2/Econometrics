@@ -111,7 +111,9 @@ class OLS:
 
     @statistical_test
     def catalizator_test(self):
-        corr = np.corrcoef(self.x_data.T)
+        r_matrix = np.corrcoef(self.x_data.T)
+        r0_vector = [(i, np.corrcoef(self.x_data[:, i], self.y_data)[0][1]) for i in range(self.x_data.shape[1])]
+        print(r_matrix, r0_vector)
         return False
 
     @statistical_test
