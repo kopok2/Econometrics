@@ -60,16 +60,26 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {6}Korekty}{16}{section.6}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7}Wybrane modele}{16}{section.7}% 
+\contentsline {subsection}{\numberline {6.1}Korekty stabilno\IeC {\'s}ci}{16}{subsection.6.1}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {8}Prognoza}{16}{section.8}% 
+\contentsline {subsection}{\numberline {6.2}Korekta heteroskedastyczno\IeC {\'s}ci i autokorelacji}{16}{subsection.6.2}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {9}Interpretacja}{16}{section.9}% 
+\contentsline {section}{\numberline {7}Wybrane modele}{17}{section.7}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {10}Podsumowanie}{16}{section.10}% 
+\contentsline {subsection}{\numberline {7.1}Wyb\IeC {\'o}r modelu}{17}{subsection.7.1}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {11}Spis tabel}{17}{section.11}% 
+\contentsline {subsection}{\numberline {7.2}Model prognostyczny}{17}{subsection.7.2}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {12}Spis rysunk\IeC {\'o}w}{18}{section.12}% 
+\contentsline {subsection}{\numberline {7.3}Model analityczny}{17}{subsection.7.3}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {13}Literatura}{19}{section.13}% 
+\contentsline {section}{\numberline {8}Prognoza}{17}{section.8}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {9}Interpretacja}{17}{section.9}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {10}Podsumowanie}{17}{section.10}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {11}Spis tabel}{18}{section.11}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {12}Spis rysunk\IeC {\'o}w}{19}{section.12}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {13}Literatura}{20}{section.13}% 

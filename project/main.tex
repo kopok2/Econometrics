@@ -8,6 +8,7 @@
 \usepackage{graphicx}
 \usepackage{mathrsfs}
 \usepackage{amssymb}
+\usepackage{amsmath}
 
 \addbibresource{bib_cite.bib}
 
@@ -357,9 +358,66 @@ Jeżeli statystyka testowa ~$DW$ znajduje się w przedziale ~$(1,5; 2,5)$, to mo
 
 \[DW = \frac{\sum_{t=2}^{n} (e_t-e_{t-1}^2)}{\sum_{t=1}^{n}e_t^2}\]
 
+\newpage
 \section{Korekty}
 
+\subsection{Korekty stabilności}
+W związku z rozważaniem szerokiej klasy funkcji opartych o rozszerzony zbiór danych, a także dużą liczbę zmiennych objaśniających, korekty stabilności postaci modelu i stabilności parametrów nie są używane w projekcie.
+
+\subsection{Korekta heteroskedastyczności i autokorelacji}
+Do usunięcia heteroskedastyczności i autokorelacji z modelu ekonometrycznego można użyć uogólnionej metody najmniejszych kwadratów.
+
+Estymator parametrów modelu:
+
+\[a = (X^T\Omega^{-1}X)^{-1}X^T\Omega^{-1}y\]
+
+Estymator wariancji składnika losowego:
+
+\[S^2=\frac{e^T\Omega^{-1}e}{n - (k+1)}\]
+
+Estymator macierzy kowariancji estymatorów:
+
+\[\hat{D}^2(a)=S^2(X^T\Omega^{-1}X)^{-1}\]
+
+Macierz ~$\Omega$ nie jest znana, dlatego do korekt używa się estymatorów:
+
+Korekta heteroskedastyczności dla ~$\sigma^2 = 1$ oraz estymatora ~$\sigma_t^2=e_t^2$:
+
+\begin{equation*}
+    \Omega_{h}^{-1}=
+    \begin{bmatrix}
+        \frac{1}{\sigma_1^2} & 0 & ... & 0 \\
+        0 & \frac{1}{\sigma_2^2} & ... & 0 \\
+        ... & ... & ... & ... \\
+        0 & 0 & ... & \frac{1}{\sigma_n^2}
+    \end{bmatrix}
+\end{equation*}
+
+Korekta autokorelacji I rzędu dla znanego(wyestymowanego) ~$\rho$:
+
+\begin{equation*}
+    \Omega_{a}^{-1}=\frac{1}{1-\rho^2}
+    \begin{bmatrix}
+        1 & -\rho & ... & 0 \\
+        -\rho & 1 + \rho^2 & ... & 0 \\
+        ... & ... & ... & ... \\
+        0 & 0 & ... & 1 \\
+    \end{bmatrix}
+\end{equation*}
+
+Korektę łączną zapisać można jako(~$\rho$ wyestymowane po korekcie heteroskedastyczności):
+
+\[\Omega_{ha}^{-1}=\frac{1}{1-\rho^2}\Omega_h^{-1}\Omega_a^{-1}\]
+
+\newpage
 \section{Wybrane modele}
+\subsection{Wybór modelu}
+Dla celów wyboru modelu klasa funkcji została rozszerzona o modele z korektą heteroskedastyczności, korektą autokorelacji oraz korektą łączną, co zwiększyło ilość rozważanych modeli do ~$4K=4*888=3552$. Poprawność każdego rozważanego modelu została zweryfikowana. Pełne sprawozdanie z estymacji i weryfikacji wszystkich modeli znajduje się w załączniku do pracy.
+
+\subsection{Model prognostyczny}
+
+\subsection{Model analityczny}
+
 
 \section{Prognoza}
 
