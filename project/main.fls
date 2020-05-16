@@ -206,10 +206,11 @@ INPUT /home/karol_oleszek/Projects/Econometrics/Econometrics/project/main.out
 INPUT /home/karol_oleszek/Projects/Econometrics/Econometrics/project/main.out
 INPUT /home/karol_oleszek/Projects/Econometrics/Econometrics/project/main.run.xml
 OUTPUT /home/karol_oleszek/Projects/Econometrics/Econometrics/project/main.run.xml
+INPUT /usr/share/texmf-dist/fonts/enc/dvips/pl/plms.enc
+INPUT /usr/share/texmf-dist/fonts/enc/dvips/pl/plsc.enc
 INPUT /usr/share/texmf-dist/fonts/enc/dvips/pl/plmi.enc
 INPUT /usr/share/texmf-dist/fonts/enc/dvips/pl/plrm.enc
 INPUT /usr/share/texmf-dist/fonts/enc/dvips/pl/plit.enc
-INPUT /usr/share/texmf-dist/fonts/enc/dvips/pl/plms.enc
 INPUT /usr/share/texmf-dist/fonts/enc/dvips/pl/plme.enc
 INPUT /usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb
 INPUT /usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm7.pfb
@@ -222,10 +223,12 @@ INPUT /usr/share/texmf-dist/fonts/type1/public/pl/plmi7.pfb
 INPUT /usr/share/texmf-dist/fonts/type1/public/pl/plr10.pfb
 INPUT /usr/share/texmf-dist/fonts/type1/public/pl/plr12.pfb
 INPUT /usr/share/texmf-dist/fonts/type1/public/pl/plr17.pfb
+INPUT /usr/share/texmf-dist/fonts/type1/public/pl/plr5.pfb
 INPUT /usr/share/texmf-dist/fonts/type1/public/pl/plr6.pfb
 INPUT /usr/share/texmf-dist/fonts/type1/public/pl/plr7.pfb
 INPUT /usr/share/texmf-dist/fonts/type1/public/pl/plr8.pfb
 INPUT /usr/share/texmf-dist/fonts/type1/public/pl/plsy10.pfb
+INPUT /usr/share/texmf-dist/fonts/type1/public/pl/plsy7.pfb
 INPUT /usr/share/texmf-dist/fonts/type1/public/pl/plti10.pfb
 INPUT /usr/share/texmf-dist/fonts/type1/public/pl/plti8.pfb
 INPUT /usr/share/texmf-dist/fonts/type1/public/rsfs/rsfs10.pfb
