@@ -346,17 +346,21 @@ Statystyka testowa ~$F$ ma rozkład F-Snedecora-Fishera z ~$r_1 = k+1$ i ~$r_2 =
 \subsection{Autokorelacja składnika losowego}
 Autokorelacja składnika losowego jest niepożądaną cechą modelu ekonometrycznego. Występowanie zjawiska autokorelacji pierwszego rzędu można badać przy założeniu, że:
 
-\[e_t = re_{t-1}+h_t\]
+\[e_t = \rho e_{t-1}+\eta_t\]
 
-Służy do tego test Durbina-Watsona.
+Służy do tego test mnożnika Lagrange'a autokorelacji składnika losowego.
 
-~$H_0$: ~$r=0$. Zjawisko autokorelacji I rzędu nie występuje.
+~$H_0$: ~$\rho=0$. Zjawisko autokorelacji I rzędu nie występuje.
 
-~$H_1$: ~$r\neq0$. Zjawisko autokorelacji I rzędu występuje.
+~$H_1$: ~$\rho\neq0$. Zjawisko autokorelacji I rzędu występuje.
 
-Jeżeli statystyka testowa ~$DW$ znajduje się w przedziale ~$(1,5; 2,5)$, to można przyjąć, że zjawisko autokorelacji I rzędu nie występuje.
+Szacowany jest model pomocniczy i obliczany jest jego współczynnik determinacji.
 
-\[DW = \frac{\sum_{t=2}^{n} (e_t-e_{t-1}^2)}{\sum_{t=1}^{n}e_t^2}\]
+\[e_t=\beta_0+\beta_1x_{1t}+\beta_2x_{2t}+...+\beta_kx_{kt}+\beta_{k+1}e_t+\mu_t\]
+
+Dla dużej próby (~$n>30$) statystyka testowa ~$LM$ ma rozkład ~$\chi^2$ z jednym stopniem swobody.
+
+\[LM = (n-1)R_{e_t}^2\]
 
 \newpage
 \section{Korekty}
