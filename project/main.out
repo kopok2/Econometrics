@@ -33,10 +33,25 @@
 \BOOKMARK [1][-]{section.7}{Wybrane modele}{}% 33
 \BOOKMARK [2][-]{subsection.7.1}{Wyb\363r modelu}{section.7}% 34
 \BOOKMARK [2][-]{subsection.7.2}{Model prognostyczny}{section.7}% 35
-\BOOKMARK [2][-]{subsection.7.3}{Model analityczny}{section.7}% 36
-\BOOKMARK [1][-]{section.8}{Prognoza}{}% 37
-\BOOKMARK [1][-]{section.9}{Interpretacja}{}% 38
-\BOOKMARK [1][-]{section.10}{Podsumowanie}{}% 39
-\BOOKMARK [1][-]{section.11}{Spis tabel}{}% 40
-\BOOKMARK [1][-]{section.12}{Spis rysunk\363w}{}% 41
-\BOOKMARK [1][-]{section.13}{Literatura}{}% 42
+\BOOKMARK [2][-]{subsection.7.3}{Postac modelu}{section.7}% 36
+\BOOKMARK [2][-]{subsection.7.4}{Wyestymowane parametry modelu}{section.7}% 37
+\BOOKMARK [2][-]{subsection.7.5}{Wskazniki jakosci modelu}{section.7}% 38
+\BOOKMARK [2][-]{subsection.7.6}{Weryfikacja poprawnosci modelu}{section.7}% 39
+\BOOKMARK [3][-]{subsubsection.7.6.1}{Koincydencja}{subsection.7.6}% 40
+\BOOKMARK [3][-]{subsubsection.7.6.2}{Katalizatory}{subsection.7.6}% 41
+\BOOKMARK [3][-]{subsubsection.7.6.3}{Wsp\363\233liniowosc zmiennych}{subsection.7.6}% 42
+\BOOKMARK [3][-]{subsubsection.7.6.4}{Normalnosc rozk\233adu reszt}{subsection.7.6}% 43
+\BOOKMARK [3][-]{subsubsection.7.6.5}{Istotnosc zmiennych objasniajacych}{subsection.7.6}% 44
+\BOOKMARK [3][-]{subsubsection.7.6.6}{Istotnosc wsp\363\233czynnika determinacji}{subsection.7.6}% 45
+\BOOKMARK [3][-]{subsubsection.7.6.7}{Liniowosc postaci modelu}{subsection.7.6}% 46
+\BOOKMARK [3][-]{subsubsection.7.6.8}{Stabilnosc parametr\363w modelu}{subsection.7.6}% 47
+\BOOKMARK [3][-]{subsubsection.7.6.9}{Homoskedastycznosc}{subsection.7.6}% 48
+\BOOKMARK [3][-]{subsubsection.7.6.10}{Autokorelacja czynnika losowego I rzedu}{subsection.7.6}% 49
+\BOOKMARK [3][-]{subsubsection.7.6.11}{Wynik weryfikacji poprawnosci modelu}{subsection.7.6}% 50
+\BOOKMARK [2][-]{subsection.7.7}{Model analityczny}{section.7}% 51
+\BOOKMARK [1][-]{section.8}{Prognoza}{}% 52
+\BOOKMARK [1][-]{section.9}{Interpretacja}{}% 53
+\BOOKMARK [1][-]{section.10}{Podsumowanie}{}% 54
+\BOOKMARK [1][-]{section.11}{Spis tabel}{}% 55
+\BOOKMARK [1][-]{section.12}{Spis rysunk\363w}{}% 56
+\BOOKMARK [1][-]{section.13}{Literatura}{}% 57
