@@ -185,7 +185,7 @@ Funkcje przyjmują analityczną postać:
 
 parametry szacowane są przy użyciu metody najmniejszych kwadratów.
 
-Ze względu na potencjalnie nielinowy charakter zależności rozważony został zbiór danych rozszerzony o przetransformowane zmienne: ~$e^{X_i}, X_i^2, \frac{1}{1+X_i}$ o łącznym rozmiarze 4392 x 888. Dalsze rozszerzanie zbioru danych osłabiło by stabilność numeryczną modeli i nadmiernie zwiększyło by wymiar Wapnika-Czerwonienisa, co osłabiło by możliwości generalizacji przez modele (\textcite{Kaminski2017}).
+Ze względu na potencjalnie nielinowy charakter zależności rozważony został zbiór danych rozszerzony o przetransformowane zmienne: ~$e^{\frac{X_i-\overline{X_i}}{\sigma_{X_i}}}, X_i^2, X_i^3$ o łącznym rozmiarze 4392 x 748. Dalsze rozszerzanie zbioru danych osłabiło by stabilność numeryczną modeli i nadmiernie zwiększyło by wymiar Wapnika-Czerwonienkisa, co osłabiło by możliwości generalizacji przez modele (\textcite{Kaminski2017}).
 
 \newpage
 \subsection{Rozważany podzbiór funkcji}
@@ -418,7 +418,7 @@ Korektę łączną zapisać można jako(~$\rho$ wyestymowane po korekcie heteros
 \newpage
 \section{Wybrane modele}
 \subsection{Wybór modelu}
-Dla celów wyboru modelu klasa funkcji została rozszerzona o modele z korektą heteroskedastyczności, korektą autokorelacji oraz korektą łączną, co zwiększyło ilość rozważanych modeli do ~$4K=4*888=3552$. Poprawność każdego rozważanego modelu została zweryfikowana. Pełne sprawozdanie z estymacji i weryfikacji wszystkich modeli znajduje się w załączniku do pracy.
+Dla celów wyboru modelu klasa funkcji została rozszerzona o modele z korektą heteroskedastyczności, korektą autokorelacji oraz korektą łączną, co zwiększyło ilość rozważanych modeli do ~$4K=4*748=2992$. Poprawność każdego rozważanego modelu została zweryfikowana. Pełne sprawozdanie z estymacji i weryfikacji wszystkich modeli znajduje się w załączniku do pracy.
 
 \subsection{Model prognostyczny}
 \subsection{Postać modelu}

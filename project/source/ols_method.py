@@ -42,7 +42,8 @@ def statistical_test(method):
 
 class OLS:
     """Ordinary Least Squares econometric model."""
-    def __init__(self, x_data, y_data, verbose=True, alpha=0.05, name='Econometric Model', var_names=None):
+    def __init__(self, x_data, y_data, verbose=True, alpha=0.05, name='Econometric Model', var_names=None,
+                 ridge_lambda=0):
         """
         Initialize model with fit and statistical verification.
 
@@ -67,7 +68,9 @@ class OLS:
         self.make_latex_model()
         self.r2_score = 0.0
         self.mae_score = 0.0
-        
+        self.least_important_param_name = ''
+        self.ridge_lambda = ridge_lambda
+
         self.run_model()
 
     def ltw(self, msg):
@@ -108,7 +111,7 @@ class OLS:
         Fit model parameters with initial data.
         """
         data = np.c_[np.ones(self.n), self.x_data]
-        self.gram_schmidt = np.linalg.inv(data.T @ data)
+        self.gram_schmidt = np.linalg.pinv(data.T @ data + np.diag(np.repeat(self.ridge_lambda, self.k + 1)))
         self.params = self.gram_schmidt @ data.T @ self.y_data
         predictions = self.predict(data)
         self.residuals = self.y_data - predictions
@@ -256,12 +259,16 @@ class OLS:
         t_alpha_nk1 = t.isf(df=nk1, q=self.alpha)
         result = True
         self.ltw('\\subsubsection{Istotność zmiennych objaśniających}\n')
+        mx = 0
         for i in range(self.k + 1):
             print(f"Testowanie istotnosci zmiennej {i}")
             t_stat = self.params[i] / da[i, i]
             print(t_stat, t_alpha_nk1)
             self.ltw(f'\\[t_{{\\alpha_{i + 1}}} = {t_stat}\\]\n')
             self.ltw(f'\\[t_{{{self.alpha}, {nk1}}} = {t_alpha_nk1}\\]\n')
+            if abs(t_stat) > mx:
+                mx = abs(t_stat)
+                self.least_important_param_name = self.var_names[i]
             if abs(t_stat) < t_alpha_nk1:
                 result = False
                 self.ltw(f'Zmienna ~$X_{i + 1}$ jest statystycznie nieistotna.\n')
