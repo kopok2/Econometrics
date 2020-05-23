@@ -30,28 +30,31 @@
 \BOOKMARK [1][-]{section.6}{Korekty}{}% 30
 \BOOKMARK [2][-]{subsection.6.1}{Korekty stabilnosci}{section.6}% 31
 \BOOKMARK [2][-]{subsection.6.2}{Korekta heteroskedastycznosci i autokorelacji}{section.6}% 32
-\BOOKMARK [1][-]{section.7}{Wybrane modele}{}% 33
-\BOOKMARK [2][-]{subsection.7.1}{Wyb\363r modelu}{section.7}% 34
-\BOOKMARK [2][-]{subsection.7.2}{Model prognostyczny}{section.7}% 35
-\BOOKMARK [2][-]{subsection.7.3}{Postac modelu}{section.7}% 36
-\BOOKMARK [2][-]{subsection.7.4}{Wyestymowane parametry modelu}{section.7}% 37
-\BOOKMARK [2][-]{subsection.7.5}{Wskazniki jakosci modelu}{section.7}% 38
-\BOOKMARK [2][-]{subsection.7.6}{Weryfikacja poprawnosci modelu}{section.7}% 39
-\BOOKMARK [3][-]{subsubsection.7.6.1}{Koincydencja}{subsection.7.6}% 40
-\BOOKMARK [3][-]{subsubsection.7.6.2}{Katalizatory}{subsection.7.6}% 41
-\BOOKMARK [3][-]{subsubsection.7.6.3}{Wsp\363\233liniowosc zmiennych}{subsection.7.6}% 42
-\BOOKMARK [3][-]{subsubsection.7.6.4}{Normalnosc rozk\233adu reszt}{subsection.7.6}% 43
-\BOOKMARK [3][-]{subsubsection.7.6.5}{Istotnosc zmiennych objasniajacych}{subsection.7.6}% 44
-\BOOKMARK [3][-]{subsubsection.7.6.6}{Istotnosc wsp\363\233czynnika determinacji}{subsection.7.6}% 45
-\BOOKMARK [3][-]{subsubsection.7.6.7}{Liniowosc postaci modelu}{subsection.7.6}% 46
-\BOOKMARK [3][-]{subsubsection.7.6.8}{Stabilnosc parametr\363w modelu}{subsection.7.6}% 47
-\BOOKMARK [3][-]{subsubsection.7.6.9}{Homoskedastycznosc}{subsection.7.6}% 48
-\BOOKMARK [3][-]{subsubsection.7.6.10}{Autokorelacja czynnika losowego I rzedu}{subsection.7.6}% 49
-\BOOKMARK [3][-]{subsubsection.7.6.11}{Wynik weryfikacji poprawnosci modelu}{subsection.7.6}% 50
-\BOOKMARK [2][-]{subsection.7.7}{Model analityczny}{section.7}% 51
-\BOOKMARK [1][-]{section.8}{Prognoza}{}% 52
-\BOOKMARK [1][-]{section.9}{Interpretacja}{}% 53
-\BOOKMARK [1][-]{section.10}{Podsumowanie}{}% 54
-\BOOKMARK [1][-]{section.11}{Spis tabel}{}% 55
-\BOOKMARK [1][-]{section.12}{Spis rysunk\363w}{}% 56
-\BOOKMARK [1][-]{section.13}{Literatura}{}% 57
+\BOOKMARK [3][-]{subsubsection.6.2.1}{Korekta heteroskedastycznosci}{subsection.6.2}% 33
+\BOOKMARK [3][-]{subsubsection.6.2.2}{Korekta autokorelacji I rzedu}{subsection.6.2}% 34
+\BOOKMARK [3][-]{subsubsection.6.2.3}{Korekta \233aczna}{subsection.6.2}% 35
+\BOOKMARK [1][-]{section.7}{Wybrane modele}{}% 36
+\BOOKMARK [2][-]{subsection.7.1}{Wyb\363r modelu}{section.7}% 37
+\BOOKMARK [2][-]{subsection.7.2}{Model prognostyczny}{section.7}% 38
+\BOOKMARK [3][-]{subsubsection.7.2.1}{Postac modelu}{subsection.7.2}% 39
+\BOOKMARK [3][-]{subsubsection.7.2.2}{Wyestymowane parametry modelu}{subsection.7.2}% 40
+\BOOKMARK [3][-]{subsubsection.7.2.3}{Wskazniki jakosci modelu}{subsection.7.2}% 41
+\BOOKMARK [3][-]{subsubsection.7.2.4}{Weryfikacja poprawnosci modelu}{subsection.7.2}% 42
+\BOOKMARK [3][-]{subsubsection.7.2.5}{Koincydencja}{subsection.7.2}% 43
+\BOOKMARK [3][-]{subsubsection.7.2.6}{Katalizatory}{subsection.7.2}% 44
+\BOOKMARK [3][-]{subsubsection.7.2.7}{Wsp\363\233liniowosc zmiennych}{subsection.7.2}% 45
+\BOOKMARK [3][-]{subsubsection.7.2.8}{Normalnosc rozk\233adu reszt}{subsection.7.2}% 46
+\BOOKMARK [3][-]{subsubsection.7.2.9}{Istotnosc zmiennych objasniajacych}{subsection.7.2}% 47
+\BOOKMARK [3][-]{subsubsection.7.2.10}{Istotnosc wsp\363\233czynnika determinacji}{subsection.7.2}% 48
+\BOOKMARK [3][-]{subsubsection.7.2.11}{Liniowosc postaci modelu}{subsection.7.2}% 49
+\BOOKMARK [3][-]{subsubsection.7.2.12}{Stabilnosc parametr\363w modelu}{subsection.7.2}% 50
+\BOOKMARK [3][-]{subsubsection.7.2.13}{Homoskedastycznosc}{subsection.7.2}% 51
+\BOOKMARK [3][-]{subsubsection.7.2.14}{Autokorelacja czynnika losowego I rzedu}{subsection.7.2}% 52
+\BOOKMARK [3][-]{subsubsection.7.2.15}{Wynik weryfikacji poprawnosci modelu}{subsection.7.2}% 53
+\BOOKMARK [2][-]{subsection.7.3}{Model analityczny}{section.7}% 54
+\BOOKMARK [1][-]{section.8}{Prognoza}{}% 55
+\BOOKMARK [1][-]{section.9}{Interpretacja}{}% 56
+\BOOKMARK [1][-]{section.10}{Podsumowanie}{}% 57
+\BOOKMARK [1][-]{section.11}{Spis tabel}{}% 58
+\BOOKMARK [1][-]{section.12}{Spis rysunk\363w}{}% 59
+\BOOKMARK [1][-]{section.13}{Literatura}{}% 60

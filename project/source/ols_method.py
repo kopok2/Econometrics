@@ -24,6 +24,9 @@ def same_sgn(first, second):
     """Check whether both a and b have the same sign."""
     return (first < 0 and second < 0) or (first > 0 and second > 0)
 
+def skip(f):
+    return lambda _: True
+
 
 def statistical_test(method):
     """
@@ -69,9 +72,10 @@ class OLS:
         self.r2_score = 0.0
         self.mae_score = 0.0
         self.least_important_param_name = ''
+        self.most_colinear_param_name = ''
         self.ridge_lambda = ridge_lambda
 
-        self.run_model()
+        # self.run_model()
 
     def ltw(self, msg):
         """
@@ -87,31 +91,34 @@ class OLS:
         Write down model formula in latex.
         """
         self.ltw('\\subsection{Postać modelu}\n')
-        model_form = " + ".join((f'\\alpha_{i+1}{var_name}' for i, var_name in enumerate(self.var_names)))
-        self.ltw(f'\\[ \hat{{Y}} = \\alpha_0 + {model_form}\\]')
+        model_form = "\n".join((f'\\[+\\alpha_{{{i+1}}}{var_name.replace("&", "And")}\\]' for i, var_name in enumerate(self.var_names)))
+        self.ltw(f'\\[ \hat{{Y}} = \\alpha_0\\]\n{model_form}\n')
 
-    def log(self, message):
+    def log(self, *args):
         """
         Log model output.
 
         :param message: string to print (str).
         """
         if self.verbose:
-            print(message)
+            print(*args)
 
     def run_model(self):
         """
         Run model inference and validation.
         """
-        self.fit()
+        self.fit(None, None)
         self.validate()
+        #self.parameters_significance_test()
+        #if self.tests_passed:
+        #    self.tests_passed = 0
 
-    def fit(self):
+    def fit(self, _1, _2):
         """
         Fit model parameters with initial data.
         """
         data = np.c_[np.ones(self.n), self.x_data]
-        self.gram_schmidt = np.linalg.pinv(data.T @ data + np.diag(np.repeat(self.ridge_lambda, self.k + 1)))
+        self.gram_schmidt = np.linalg.inv(data.T @ data + np.diag(np.repeat(self.ridge_lambda, self.k + 1)))
         self.params = self.gram_schmidt @ data.T @ self.y_data
         predictions = self.predict(data)
         self.residuals = self.y_data - predictions
@@ -122,7 +129,7 @@ class OLS:
         self.mae_score = abs(self.residuals).mean()
         self.ltw('\\subsection{Wyestymowane parametry modelu}\n')
         for i, param in enumerate(self.params):
-            self.ltw(f'\\[\\alpha_{i} = {param}\\]\n')
+            self.ltw(f'\\[\\alpha_{{{i}}} = {param}\\]\n')
         self.ltw('\\subsection{Wskaźniki jakości modelu}\n')
         self.ltw(f'Współczynnik determinacji ~$R^2 = {self.r2_score}$\n\n')
         self.ltw(f'Średni absolutny błąd prognozy \\textit{{ex post}} ~$MAE = {self.mae_score}$\n')
@@ -167,11 +174,11 @@ class OLS:
         for i in range(self.k):
             correlation = np.corrcoef(self.x_data[:, i], self.y_data)[0][1]
             param = self.params[i + 1]
-            self.ltw(f'\\[sgn(\\alpha_{i + 1}) = {sgn(param)}\\]\n')
-            self.ltw(f'\\[sgn(r_{i + 1}) = {sgn(correlation)}\\]\n')
+            self.ltw(f'\\[sgn(\\alpha_{{{i + 1}}}) = {sgn(param)}\\]\n')
+            self.ltw(f'\\[sgn(r_{{{i + 1}}}) = {sgn(correlation)}\\]\n')
             if not same_sgn(correlation, param):
                 result = False
-                print('brak koincydencji', correlation, param, sgn(correlation), sgn(param))
+                self.log('brak koincydencji', correlation, param, sgn(correlation), sgn(param))
                 self.ltw('Brak koincydencji.\n')
             else:
                 self.ltw('Koincydencja.\n')
@@ -179,24 +186,25 @@ class OLS:
         return result
 
     @statistical_test
+    @skip
     def catalizator_test(self):
         r_matrix = np.corrcoef(self.x_data.T)
         r0_vector = [np.corrcoef(self.x_data[:, i], self.y_data)[0][1] for i in range(self.k)]
-        print(r_matrix, r0_vector)
+        self.log(r_matrix, r0_vector)
         result = True
         self.ltw('\\subsubsection{Katalizatory}\n')
         for i in range(self.k):
             for j in range(self.k):
                 if abs(r0_vector[j]) > abs(r0_vector[i]):
-                    print(f'sprawdzam pare {i} {j}')
+                    self.log(f'sprawdzam pare {i} {j}')
                     rij = r_matrix[i][j] * sgn(r0_vector[i]) * sgn(r0_vector[j])
                     ri = abs(r0_vector[i])
                     rj = abs(r0_vector[j])
                     try:
                         if rij > (ri / rj) or rij < 0:
                             result = False
-                            self.ltw(f'Zmienna ~$X_{i + 1}$ jest katalizatorem w parze (~$X_{i+1}$, ~$X_{j + 1}$)\n')
-                            print(f"Katalizator w parze {i} {j}")
+                            self.ltw(f'Zmienna ~$X_{{{i + 1}}}$ jest katalizatorem w parze (~$X_{{{i+1}}}$, ~$X_{{{j + 1}}}$)\n\n')
+                            self.log(f"Katalizator w parze {i} {j}")
                     except ZeroDivisionError:
                         pass
         if result:
@@ -204,22 +212,27 @@ class OLS:
         return result
 
     @statistical_test
+    @skip
     def colinearity_test(self):
         result = True
+        mx = 0
         self.ltw('\\subsubsection{Współliniowość zmiennych}\n')
         for i in range(self.k):
-            print(f"Sprawdzam wspoliniowosc zmiennej {i}")
+            self.log(f"Sprawdzam wspoliniowosc zmiennej {i}")
             target = self.x_data[:, i].reshape(-1, 1)
             data = np.delete(self.x_data, i, axis=1)
             model = LinearRegression()
             model.fit(data, target)
             score = r2_score(target, model.predict(data))
-            print(score)
-            self.ltw(f'Zmienna ~$X_{i + 1}$ w zależności od reszty zmiennych - ~$R^2 = {score}$.\n')
+            if score > mx:
+                mx = score
+                self.most_colinear_param_name = self.var_names[i]
+            self.log(score)
+            self.ltw(f'Zmienna ~$X_{{{i + 1}}}$ w zależności od reszty zmiennych - ~$R^2 = {score}$.\n')
             if score > 0.9:
                 result = False
                 self.ltw('Występuje współliniowość.\n\n')
-                print(f"Zmienna {i} wspoliniowa.")
+                self.log(f"Zmienna {i} wspoliniowa.")
             else:
                 self.ltw('Nie występuje współliniowość.\n\n')
         return result
@@ -239,13 +252,13 @@ class OLS:
         k = u4 / sig4
         jb = ((n - self.k) / 6) * (a ** 2 + 0.25 * ((k - 3) ** 2))
         chi2_alpha_2 = chi2.isf(df=2, q=self.alpha)
-        print(jb, chi2_alpha_2)
+        self.log(jb, chi2_alpha_2)
         self.ltw(f'\\[JB = {jb}\\]\n')
         self.ltw(f'\\[\chi^2_{{{self.alpha}, 2}} = {chi2_alpha_2}\\]\n')
         if jb > chi2_alpha_2:
             result = False
             self.ltw('Reszty nie mają rozkładu normalnego.\n')
-            print("Reszty nie mają rozkładu normalnego.")
+            self.log("Reszty nie mają rozkładu normalnego.")
         else:
             self.ltw('Reszty mają rozkład normalny.\n')
         return result
@@ -255,26 +268,26 @@ class OLS:
         nk1 = (self.n - (self.k + 1))
         s2 = np.dot(self.residuals.T, self.residuals) / nk1
         da = self.gram_schmidt * s2
-        print(da)
+        self.log(da)
         t_alpha_nk1 = t.isf(df=nk1, q=self.alpha)
         result = True
         self.ltw('\\subsubsection{Istotność zmiennych objaśniających}\n')
         mx = 0
         for i in range(self.k + 1):
-            print(f"Testowanie istotnosci zmiennej {i}")
+            self.log(f"Testowanie istotnosci zmiennej {i}")
             t_stat = self.params[i] / da[i, i]
-            print(t_stat, t_alpha_nk1)
-            self.ltw(f'\\[t_{{\\alpha_{i + 1}}} = {t_stat}\\]\n')
+            self.log(t_stat, t_alpha_nk1)
+            self.ltw(f'\\[t_{{\\alpha_{{{i + 1}}}}} = {t_stat}\\]\n')
             self.ltw(f'\\[t_{{{self.alpha}, {nk1}}} = {t_alpha_nk1}\\]\n')
-            if abs(t_stat) > mx:
+            if abs(t_stat) > mx and i:
                 mx = abs(t_stat)
-                self.least_important_param_name = self.var_names[i]
+                self.least_important_param_name = self.var_names[i-1]
             if abs(t_stat) < t_alpha_nk1:
                 result = False
-                self.ltw(f'Zmienna ~$X_{i + 1}$ jest statystycznie nieistotna.\n')
-                print(f"Zmienna {i} nieistotna")
+                self.ltw(f'Zmienna ~$X_{{{i + 1}}}$ jest statystycznie nieistotna.\n')
+                self.log(f"Zmienna {i} nieistotna")
             else:
-                self.ltw(f'Zmienna ~$X_{i + 1}$ jest statystycznie istotna.\n')
+                self.ltw(f'Zmienna ~$X_{{{i + 1}}}$ jest statystycznie istotna.\n')
         return result
 
     @statistical_test
@@ -283,14 +296,14 @@ class OLS:
         self.ltw('\\subsubsection{Istotność współczynnika determinacji}\n')
         f_alpha_r1r2 = f.isf(q=self.alpha, dfn=self.k, dfd=(self.n - (self.k + 1)))
         f_stat = (self.r2_score / (1 - self.r2_score)) * ((self.n - (self.k + 1)) / (self.k))
-        print(f_stat, f_alpha_r1r2)
+        self.log(f_stat, f_alpha_r1r2)
         self.ltw(f'\\[F = {f_stat}\\]\n')
         self.ltw(f'\\[F_{{{self.alpha}, {self.k}, {self.n - (self.k + 1)}}} = {f_alpha_r1r2}\\]\n')
         if f_alpha_r1r2 < abs(f_stat):
             result = True
             self.ltw('Współczynnik determinacji ~$R^2$ jest statystycznie istotny.\n')
         else:
-            print("Wspołczynnik r2 nieistotny")
+            self.log("Wspołczynnik r2 nieistotny")
             self.ltw('Współczynnik determinacji ~$R^2$ jest statystycznie nieistotny.\n')
         return result
 
@@ -306,16 +319,16 @@ class OLS:
         
         resid1 = self.residuals[:n1]
         resid2 = self.residuals[n1:]
-        print(self.residuals, resid1, resid2)
+        self.log(self.residuals, resid1, resid2)
         s12 = np.dot(resid1, resid1) / r1
         s22 = np.dot(resid2, resid2) / r2
         f_stat = s12 / s22
-        print(f_stat, f_alpha_r1r2)
+        self.log(f_stat, f_alpha_r1r2)
         self.ltw(f'\\[F = {f_stat}\\]\n')
         self.ltw(f'\\[F_{{{self.alpha}, {r1}, {r2}}} = {f_alpha_r1r2}\\]\n')
         if f_alpha_r1r2 < abs(f_stat):
             result = False
-            print("Wystepuje heteroskedastycznosc")
+            self.log("Wystepuje heteroskedastycznosc")
             self.ltw('W modelu występuje heteroskedastyczność.\n')
         else:
             self.ltw('Model jest homoskedastyczny.\n')
@@ -344,12 +357,12 @@ class OLS:
             last = pair[0]
         n = self.n
         z = (r - (((2 * n1 * n2) / n) + 1)) / (math.sqrt((2 * n1 * n2 * (2 * n1 * n2 - n)) / ((n-1) * (n ** 2))))
-        print(z, norm_alpha)
+        self.log(z, norm_alpha)
         self.ltw(f'\\[Z = {z}\\]\n')
         self.ltw(f'\\[k_{{{self.alpha}, 0, 1}} = {norm_alpha}\\]\n')
         if abs(z) > norm_alpha:
             result = False
-            print("Model nieliniowy.")
+            self.log("Model nieliniowy.")
             self.ltw("Postać modelu nie jest liniowa.\n")
         else:
             self.ltw('Postać modelu jest liniowa.\n')
@@ -384,10 +397,10 @@ class OLS:
         f_stat = ((rsk - (rsk1 + rsk2)) / (rsk1 + rsk2)) * (r2 / r1)
         self.ltw(f'\\[F = {f_stat}\\]\n')
         self.ltw(f'\\[F_{{{self.alpha}, {r1}, {r2}}} = {f_alpha_r1r2}\\]\n')
-        print(f_stat, f_alpha_r1r2)
+        self.log(f_stat, f_alpha_r1r2)
         if f_alpha_r1r2 < abs(f_stat):
             result = False
-            print("Parametry modelu nie są stabilne.")
+            self.log("Parametry modelu nie są stabilne.")
             self.ltw("Parametry modelu nie są stabilne.\n")
         else:
             self.ltw('Parametry modelu są stabilne.\n')
@@ -402,16 +415,16 @@ class OLS:
         model = LinearRegression()
         model.fit(data, target)
         score = r2_score(target, model.predict(data))
-        print(score)
+        self.log(score)
         lm = (self.n - 1) * score
         chi2_alpha_1 = chi2.isf(q=self.alpha, df=1)
-        print(lm, chi2_alpha_1)
+        self.log(lm, chi2_alpha_1)
         self.ltw(f'\\[LM = {lm}\\]\n')
         self.ltw(f'\\[\\chi^2_{{{self.alpha}, 1}} = {chi2_alpha_1}\\]\n')
         if lm > chi2_alpha_1:
             result = False
             self.ltw('W modelu występuje autokorelacja czynnika losowego I rzędu.\n')
-            print("W modelu występuje autokorelacja pierwszego rzedu.")
+            self.log("W modelu występuje autokorelacja pierwszego rzedu.")
         else:
             self.ltw('W modelu nie występuje autokorelacja czynnika losowego I rzędu.\n')
 

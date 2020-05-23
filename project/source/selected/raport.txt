@@ -1,0 +1,857 @@
+Model|R2 Score|MAE Score|Correctness|Vars|Dropping|MaeCV|Mae POST
+Model 1| niestabilny numerycznie | e^{\frac{Effect of forex changes on cash - \overline{Effect of forex changes on cash}}{\sigma_{Effect of forex changes on cash}}}
+Model 2| niestabilny numerycznie | grossProfitMargin^2
+Model 3| niestabilny numerycznie | Total assets
+Model 4| niestabilny numerycznie | EBITDA^2
+Model 5| niestabilny numerycznie | Cash per Share^2
+Model 6| niestabilny numerycznie | cashPerShare^3
+Model 7| niestabilny numerycznie | priceToOperatingCashFlowsRatio^3
+Model 8| niestabilny numerycznie | Total assets^3
+Model 9| niestabilny numerycznie | operatingCashFlowPerShare^2
+Model 10| niestabilny numerycznie | Operating Cash Flow^3
+Model 11| niestabilny numerycznie | e^{\frac{Tangible Asset Value - \overline{Tangible Asset Value}}{\sigma_{Tangible Asset Value}}}
+Model 12| niestabilny numerycznie | Net Income - Discontinued ops^2
+Model 13| niestabilny numerycznie | e^{\frac{Cash per Share - \overline{Cash per Share}}{\sigma_{Cash per Share}}}
+Model 14| niestabilny numerycznie | Average Receivables
+Model 15| niestabilny numerycznie | e^{\frac{Inventories - \overline{Inventories}}{\sigma_{Inventories}}}
+Model 16| niestabilny numerycznie | Average Inventory
+Model 17| niestabilny numerycznie | longtermDebtToCapitalization
+Model 18| niestabilny numerycznie | Gross Profit Growth^2
+Model 19| niestabilny numerycznie | Profit Margin^3
+Model 20| niestabilny numerycznie | e^{\frac{Debt to Equity - \overline{Debt to Equity}}{\sigma_{Debt to Equity}}}
+Model 21| niestabilny numerycznie | Receivables Turnover^2
+Model 22| niestabilny numerycznie | Gross Profit Growth
+Model 23| niestabilny numerycznie | Total debt^3
+Model 24| niestabilny numerycznie | freeCashFlowPerShare
+Model 25| niestabilny numerycznie | priceToOperatingCashFlowsRatio
+Model 26| niestabilny numerycznie | e^{\frac{Real Estate - \overline{Real Estate}}{\sigma_{Real Estate}}}
+Model 27| niestabilny numerycznie | Investments^3
+Model 28| niestabilny numerycznie | payoutRatio^2
+Model 29| niestabilny numerycznie | Capex to Revenue^3
+Model 30| niestabilny numerycznie | capitalExpenditureCoverageRatios
+Model 31| niestabilny numerycznie | Investment purchases and sales^3
+Model 32| niestabilny numerycznie | cashRatio^2
+Model 33| niestabilny numerycznie | e^{\frac{Total liabilities - \overline{Total liabilities}}{\sigma_{Total liabilities}}}
+Model 34| niestabilny numerycznie | Operating Income Growth^3
+Model 35| niestabilny numerycznie | e^{\frac{3Y Net Income Growth (per Share) - \overline{3Y Net Income Growth (per Share)}}{\sigma_{3Y Net Income Growth (per Share)}}}
+Model 36| niestabilny numerycznie | e^{\frac{Income Tax Expense - \overline{Income Tax Expense}}{\sigma_{Income Tax Expense}}}
+Model 37| niestabilny numerycznie | Capex to Operating Cash Flow^3
+Model 38| niestabilny numerycznie | e^{\frac{Revenue per Share - \overline{Revenue per Share}}{\sigma_{Revenue per Share}}}
+Model 39| niestabilny numerycznie | debtRatio^2
+Model 40| niestabilny numerycznie | Debt to Equity^3
+Model 41| niestabilny numerycznie | Net Profit Margin^2
+Model 42| niestabilny numerycznie | Investing Cash flow
+Model 43| niestabilny numerycznie | Capex to Revenue^2
+Model 44| niestabilny numerycznie | Preferred Dividends
+Model 45| niestabilny numerycznie | interestCoverage
+Model 46| niestabilny numerycznie | pretaxProfitMargin^2
+Model 47| niestabilny numerycznie | 3Y Revenue Growth (per Share)^3
+Model 48| niestabilny numerycznie | Revenue Growth
+Model 49| niestabilny numerycznie | Weighted Average Shares Diluted Growth^2
+Model 50| niestabilny numerycznie | e^{\frac{Market Cap - \overline{Market Cap}}{\sigma_{Market Cap}}}
+Model 51| niestabilny numerycznie | Depreciation & Amortization^3
+Model 52| niestabilny numerycznie | Free Cash Flow margin^3
+Model 53| niestabilny numerycznie | Other Assets^2
+Model 54| niestabilny numerycznie | Financing Cash Flow
+Model 55| niestabilny numerycznie | e^{\frac{Operating Income - \overline{Operating Income}}{\sigma_{Operating Income}}}
+Model 56| niestabilny numerycznie | Days Payables Outstanding^2
+Model 57| niestabilny numerycznie | Weighted Average Shs Out^3
+Model 58| niestabilny numerycznie | e^{\frac{Free Cash Flow margin - \overline{Free Cash Flow margin}}{\sigma_{Free Cash Flow margin}}}
+Model 59| niestabilny numerycznie | EPS Growth
+Model 60| niestabilny numerycznie | Graham Net-Net^3
+Model 61| niestabilny numerycznie | freeCashFlowPerShare^2
+Model 62| niestabilny numerycznie | companyEquityMultiplier
+Model 63| niestabilny numerycznie | fixedAssetTurnover
+Model 64| niestabilny numerycznie | e^{\frac{Other Liabilities - \overline{Other Liabilities}}{\sigma_{Other Liabilities}}}
+Model 65| niestabilny numerycznie | e^{\frac{Interest Coverage - \overline{Interest Coverage}}{\sigma_{Interest Coverage}}}
+Model 66| niestabilny numerycznie | e^{\frac{POCF ratio - \overline{POCF ratio}}{\sigma_{POCF ratio}}}
+Model 67| niestabilny numerycznie | Earnings Yield
+Model 68| niestabilny numerycznie | Total liabilities^2
+Model 69| niestabilny numerycznie | Average Inventory^3
+Model 70| niestabilny numerycznie | Total debt^2
+Model 71| niestabilny numerycznie | Tangible Asset Value
+Model 72| niestabilny numerycznie | e^{\frac{Average Inventory - \overline{Average Inventory}}{\sigma_{Average Inventory}}}
+Model 73| niestabilny numerycznie | e^{\frac{Investing Cash flow - \overline{Investing Cash flow}}{\sigma_{Investing Cash flow}}}
+Model 74| niestabilny numerycznie | e^{\frac{Average Receivables - \overline{Average Receivables}}{\sigma_{Average Receivables}}}
+Model 75| niestabilny numerycznie | e^{\frac{Preferred Dividends - \overline{Preferred Dividends}}{\sigma_{Preferred Dividends}}}
+Model 76| niestabilny numerycznie | e^{\frac{3Y Shareholders Equity Growth (per Share) - \overline{3Y Shareholders Equity Growth (per Share)}}{\sigma_{3Y Shareholders Equity Growth (per Share)}}}
+Model 77| niestabilny numerycznie | Days Sales Outstanding^3
+Model 78| niestabilny numerycznie | Dividends per Share Growth^2
+Model 79| niestabilny numerycznie | Long-term debt^3
+Model 80| niestabilny numerycznie | operatingCashFlowSalesRatio^3
+Model 81| niestabilny numerycznie | cashPerShare
+Model 82| niestabilny numerycznie | 3Y Net Income Growth (per Share)^2
+Model 83| niestabilny numerycznie | returnOnEquity^3
+Model 84| niestabilny numerycznie | e^{\frac{Stock-based compensation - \overline{Stock-based compensation}}{\sigma_{Stock-based compensation}}}
+Model 85| niestabilny numerycznie | EPS Diluted Growth^3
+Model 86| niestabilny numerycznie | Earnings Before Tax Margin^2
+Model 87| niestabilny numerycznie | Tax Liabilities^2
+Model 88| niestabilny numerycznie | Operating Expenses^3
+Model 89| niestabilny numerycznie | e^{\frac{Earnings before Tax - \overline{Earnings before Tax}}{\sigma_{Earnings before Tax}}}
+Model 90| niestabilny numerycznie | Interest Expense^2
+Model 91| niestabilny numerycznie | Inventories
+Model 92| niestabilny numerycznie | SG&A Expenses Growth^3
+Model 93| niestabilny numerycznie | e^{\frac{Goodwill and Intangible Assets - \overline{Goodwill and Intangible Assets}}{\sigma_{Goodwill and Intangible Assets}}}
+Model 94| niestabilny numerycznie | PFCF ratio^3
+Model 95| niestabilny numerycznie | priceSalesRatio
+Model 96| niestabilny numerycznie | payoutRatio
+Model 97| niestabilny numerycznie | Capex per Share
+Model 98| niestabilny numerycznie | SG&A Expenses Growth
+Model 99| niestabilny numerycznie | Short-term debt
+Model 100| niestabilny numerycznie | cashRatio
+Model 101| niestabilny numerycznie | Inventory Turnover^3
+Model 102| niestabilny numerycznie | quickRatio^3
+Model 103| niestabilny numerycznie | Average Inventory^2
+Model 104| niestabilny numerycznie | e^{\frac{Deferred revenue - \overline{Deferred revenue}}{\sigma_{Deferred revenue}}}
+Model 105| niestabilny numerycznie | Average Payables^2
+Model 106| niestabilny numerycznie | Cash and cash equivalents^2
+Model 107| niestabilny numerycznie | EBITDA Margin^2
+Model 108| niestabilny numerycznie | Book Value per Share Growth^3
+Model 109| niestabilny numerycznie | e^{\frac{cashPerShare - \overline{cashPerShare}}{\sigma_{cashPerShare}}}
+Model 110| niestabilny numerycznie | Receivables growth^3
+Model 111| niestabilny numerycznie | Deferred revenue^3
+Model 112| niestabilny numerycznie | Interest Debt per Share^2
+Model 113| niestabilny numerycznie | e^{\frac{Intangibles to Total Assets - \overline{Intangibles to Total Assets}}{\sigma_{Intangibles to Total Assets}}}
+Model 114| niestabilny numerycznie | ebitperRevenue^2
+Model 115| niestabilny numerycznie | daysOfPayablesOutstanding
+Model 116| niestabilny numerycznie | Effect of forex changes on cash^2
+Model 117| niestabilny numerycznie | Stock-based compensation to Revenue
+Model 118| niestabilny numerycznie | R&D to Revenue^2
+Model 119| niestabilny numerycznie | e^{\frac{Communication Services - \overline{Communication Services}}{\sigma_{Communication Services}}}
+Model 120| niestabilny numerycznie | priceToSalesRatio^3
+Model 121| niestabilny numerycznie | Net Income^3
+Model 122| niestabilny numerycznie | Inventories^3
+Model 123| niestabilny numerycznie | Weighted Average Shs Out
+Model 124| niestabilny numerycznie | Tax Liabilities^3
+Model 125| niestabilny numerycznie | Invested Capital
+Model 126| niestabilny numerycznie | EBIT^2
+Model 127| niestabilny numerycznie | e^{\frac{currentRatio - \overline{currentRatio}}{\sigma_{currentRatio}}}
+Model 128| niestabilny numerycznie | SG&A Expense^3
+Model 129| niestabilny numerycznie | priceToFreeCashFlowsRatio^2
+Model 130| niestabilny numerycznie | Cash per Share^3
+Model 131| niestabilny numerycznie | Free Cash Flow
+Model 132| niestabilny numerycznie | Debt to Equity
+Model 133| niestabilny numerycznie | Financial Services
+Model 134| niestabilny numerycznie | Consolidated Income^3
+Model 135| niestabilny numerycznie | Retained earnings (deficit)
+Model 136| niestabilny numerycznie | e^{\frac{Energy - \overline{Energy}}{\sigma_{Energy}}}
+Model 137| niestabilny numerycznie | Weighted Average Shares Diluted Growth^3
+Model 138| niestabilny numerycznie | inventoryTurnover
+Model 139| niestabilny numerycznie | Net Profit Margin
+Model 140| niestabilny numerycznie | Weighted Average Shares Diluted Growth
+Model 141| niestabilny numerycznie | EPS Diluted^2
+Model 142| niestabilny numerycznie | EBIT Growth
+Model 143| niestabilny numerycznie | e^{\frac{operatingCashFlowPerShare - \overline{operatingCashFlowPerShare}}{\sigma_{operatingCashFlowPerShare}}}
+Model 144| niestabilny numerycznie | Interest Debt per Share
+Model 145| niestabilny numerycznie | e^{\frac{daysOfPayablesOutstanding - \overline{daysOfPayablesOutstanding}}{\sigma_{daysOfPayablesOutstanding}}}
+Model 146| niestabilny numerycznie | Payables Turnover
+Model 147| niestabilny numerycznie | Total current liabilities
+Model 148| niestabilny numerycznie | Free Cash Flow margin
+Model 149| niestabilny numerycznie | Gross Margin^3
+Model 150| niestabilny numerycznie | e^{\frac{Weighted Average Shs Out - \overline{Weighted Average Shs Out}}{\sigma_{Weighted Average Shs Out}}}
+Model 151| niestabilny numerycznie | 3Y Operating CF Growth (per Share)
+Model 152| niestabilny numerycznie | Average Receivables^2
+Model 153| niestabilny numerycznie | e^{\frac{Cash and cash equivalents - \overline{Cash and cash equivalents}}{\sigma_{Cash and cash equivalents}}}
+Model 154| niestabilny numerycznie | priceToFreeCashFlowsRatio
+Model 155| niestabilny numerycznie | EBIT
+Model 156| niestabilny numerycznie | Book Value per Share Growth^2
+Model 157| niestabilny numerycznie | e^{\frac{PFCF ratio - \overline{PFCF ratio}}{\sigma_{PFCF ratio}}}
+Model 158| niestabilny numerycznie | Intangibles to Total Assets
+Model 159| niestabilny numerycznie | e^{\frac{Investments - \overline{Investments}}{\sigma_{Investments}}}
+Model 160| niestabilny numerycznie | currentRatio
+Model 161| niestabilny numerycznie | Property, Plant & Equipment Net^2
+Model 162| niestabilny numerycznie | daysOfInventoryOutstanding
+Model 163| niestabilny numerycznie | Net Cash/Marketcap^3
+Model 164| niestabilny numerycznie | e^{\frac{daysOfSalesOutstanding - \overline{daysOfSalesOutstanding}}{\sigma_{daysOfSalesOutstanding}}}
+Model 165| niestabilny numerycznie | Income Quality^3
+Model 166| niestabilny numerycznie | e^{\frac{Weighted Average Shs Out (Dil) - \overline{Weighted Average Shs Out (Dil)}}{\sigma_{Weighted Average Shs Out (Dil)}}}
+Model 167| niestabilny numerycznie | priceFairValue
+Model 168| niestabilny numerycznie | Weighted Average Shares Growth^2
+Model 169| niestabilny numerycznie | Average Payables^3
+Model 170| niestabilny numerycznie | Total liabilities
+Model 171| niestabilny numerycznie | Net Current Asset Value
+Model 172| niestabilny numerycznie | e^{\frac{Free Cash Flow per Share - \overline{Free Cash Flow per Share}}{\sigma_{Free Cash Flow per Share}}}
+Model 173| niestabilny numerycznie | e^{\frac{Net Profit Margin - \overline{Net Profit Margin}}{\sigma_{Net Profit Margin}}}
+Model 174| niestabilny numerycznie | e^{\frac{Depreciation & Amortization - \overline{Depreciation & Amortization}}{\sigma_{Depreciation & Amortization}}}
+Model 175| niestabilny numerycznie | e^{\frac{totalDebtToCapitalization - \overline{totalDebtToCapitalization}}{\sigma_{totalDebtToCapitalization}}}
+Model 176| niestabilny numerycznie | e^{\frac{Payables Turnover - \overline{Payables Turnover}}{\sigma_{Payables Turnover}}}
+Model 177| niestabilny numerycznie | Net Income Com^2
+Model 178| niestabilny numerycznie | e^{\frac{Cash and short-term investments - \overline{Cash and short-term investments}}{\sigma_{Cash and short-term investments}}}
+Model 179| niestabilny numerycznie | priceEarningsRatio
+Model 180| niestabilny numerycznie | e^{\frac{Net Income - Non-Controlling int - \overline{Net Income - Non-Controlling int}}{\sigma_{Net Income - Non-Controlling int}}}
+Model 181| niestabilny numerycznie | Net Income - Discontinued ops^3
+Model 182| niestabilny numerycznie | daysOfInventoryOutstanding^2
+Model 183| niestabilny numerycznie | e^{\frac{Healthcare - \overline{Healthcare}}{\sigma_{Healthcare}}}
+Model 184| niestabilny numerycznie | Net Debt^3
+Model 185| niestabilny numerycznie | Receivables growth
+Model 186| niestabilny numerycznie | e^{\frac{Graham Net-Net - \overline{Graham Net-Net}}{\sigma_{Graham Net-Net}}}
+Model 187| niestabilny numerycznie | Dividend per Share^2
+Model 188| niestabilny numerycznie | Net Income Com
+Model 189| niestabilny numerycznie | e^{\frac{EBIT Growth - \overline{EBIT Growth}}{\sigma_{EBIT Growth}}}
+Model 190| niestabilny numerycznie | Debt to Assets^2
+Model 191| niestabilny numerycznie | e^{\frac{Asset Growth - \overline{Asset Growth}}{\sigma_{Asset Growth}}}
+Model 192| niestabilny numerycznie | netProfitMargin^2
+Model 193| niestabilny numerycznie | e^{\frac{freeCashFlowPerShare - \overline{freeCashFlowPerShare}}{\sigma_{freeCashFlowPerShare}}}
+Model 194| niestabilny numerycznie | Interest Debt per Share^3
+Model 195| niestabilny numerycznie | Other Liabilities^3
+Model 196| niestabilny numerycznie | Earnings before Tax^3
+Model 197| niestabilny numerycznie | Net Income
+Model 198| niestabilny numerycznie | ROE^2
+Model 199| niestabilny numerycznie | Tangible Book Value per Share
+Model 200| niestabilny numerycznie | daysOfPayablesOutstanding^3
+Model 201| niestabilny numerycznie | Operating Cash Flow
+Model 202| niestabilny numerycznie | Net Cash/Marketcap^2
+Model 203| niestabilny numerycznie | Cost of Revenue^3
+Model 204| niestabilny numerycznie | Investments^2
+Model 205| niestabilny numerycznie | e^{\frac{3Y Operating CF Growth (per Share) - \overline{3Y Operating CF Growth (per Share)}}{\sigma_{3Y Operating CF Growth (per Share)}}}
+Model 206| niestabilny numerycznie | e^{\frac{operatingCashFlowSalesRatio - \overline{operatingCashFlowSalesRatio}}{\sigma_{operatingCashFlowSalesRatio}}}
+Model 207| niestabilny numerycznie | e^{\frac{priceSalesRatio - \overline{priceSalesRatio}}{\sigma_{priceSalesRatio}}}
+Model 208| niestabilny numerycznie | Revenue per Share^3
+Model 209| niestabilny numerycznie | Revenue Growth^3
+Model 210| niestabilny numerycznie | e^{\frac{inventoryTurnover - \overline{inventoryTurnover}}{\sigma_{inventoryTurnover}}}
+Model 211| niestabilny numerycznie | e^{\frac{Free Cash Flow Yield - \overline{Free Cash Flow Yield}}{\sigma_{Free Cash Flow Yield}}}
+Model 212| niestabilny numerycznie | e^{\frac{Capex to Revenue - \overline{Capex to Revenue}}{\sigma_{Capex to Revenue}}}
+Model 213| niestabilny numerycznie | Price to Sales Ratio
+Model 214| niestabilny numerycznie | Cost of Revenue
+Model 215| niestabilny numerycznie | e^{\frac{Receivables - \overline{Receivables}}{\sigma_{Receivables}}}
+Model 216| niestabilny numerycznie | totalDebtToCapitalization^3
+Model 217| niestabilny numerycznie | EPS^3
+Model 218| niestabilny numerycznie | Energy
+Model 219| niestabilny numerycznie | Inventory Growth
+Model 220| niestabilny numerycznie | daysOfSalesOutstanding^3
+Model 221| niestabilny numerycznie | e^{\frac{Other comprehensive income - \overline{Other comprehensive income}}{\sigma_{Other comprehensive income}}}
+Model 222| niestabilny numerycznie | Receivables^2
+Model 223| niestabilny numerycznie | e^{\frac{Book Value per Share - \overline{Book Value per Share}}{\sigma_{Book Value per Share}}}
+Model 224| niestabilny numerycznie | e^{\frac{Gross Profit Growth - \overline{Gross Profit Growth}}{\sigma_{Gross Profit Growth}}}
+Model 225| niestabilny numerycznie | cashPerShare^2
+Model 226| niestabilny numerycznie | e^{\frac{priceFairValue - \overline{priceFairValue}}{\sigma_{priceFairValue}}}
+Model 227| niestabilny numerycznie | EBIT Growth^2
+Model 228| niestabilny numerycznie | Payables^3
+Model 229| niestabilny numerycznie | EBITDA Margin
+Model 230| niestabilny numerycznie | Tax assets^2
+Model 231| niestabilny numerycznie | Operating Income Growth^2
+Model 232| niestabilny numerycznie | Book Value per Share^3
+Model 233| niestabilny numerycznie | ebitperRevenue^3
+Model 234| niestabilny numerycznie | Total current liabilities^2
+Model 235| niestabilny numerycznie | Payout Ratio^3
+Model 236| niestabilny numerycznie | payoutRatio^3
+Model 237| niestabilny numerycznie | Market Cap^2
+Model 238| niestabilny numerycznie | Cash and short-term investments
+Model 239| niestabilny numerycznie | Interest Coverage
+Model 240| niestabilny numerycznie | Total shareholders equity^2
+Model 241| niestabilny numerycznie | Deferred revenue
+Model 242| niestabilny numerycznie | e^{\frac{R&D Expenses - \overline{R&D Expenses}}{\sigma_{R&D Expenses}}}
+Model 243| niestabilny numerycznie | e^{\frac{PE ratio - \overline{PE ratio}}{\sigma_{PE ratio}}}
+Model 244| niestabilny numerycznie | Free Cash Flow Yield
+Model 245| niestabilny numerycznie | e^{\frac{Other Assets - \overline{Other Assets}}{\sigma_{Other Assets}}}
+Model 246| niestabilny numerycznie | e^{\frac{priceToFreeCashFlowsRatio - \overline{priceToFreeCashFlowsRatio}}{\sigma_{priceToFreeCashFlowsRatio}}}
+Model 247| niestabilny numerycznie | 3Y Operating CF Growth (per Share)^3
+Model 248| niestabilny numerycznie | Issuance (buybacks) of shares^2
+Model 249| niestabilny numerycznie | Asset Growth^3
+Model 250| niestabilny numerycznie | returnOnEquity^2
+Model 251| niestabilny numerycznie | daysOfInventoryOutstanding^3
+Model 252| niestabilny numerycznie | Intangibles to Total Assets^2
+Model 253| niestabilny numerycznie | Revenue
+Model 254| niestabilny numerycznie | 3Y Dividend per Share Growth (per Share)^2
+Model 255| niestabilny numerycznie | Earnings Before Tax Margin
+Model 256| niestabilny numerycznie | Financing Cash Flow^3
+Model 257| niestabilny numerycznie | EBIT Margin^3
+Model 258| niestabilny numerycznie | Dividend per Share^3
+Model 259| niestabilny numerycznie | e^{\frac{EPS Diluted Growth - \overline{EPS Diluted Growth}}{\sigma_{EPS Diluted Growth}}}
+Model 260| niestabilny numerycznie | Investing Cash flow^2
+Model 261| niestabilny numerycznie | Long-term investments
+Model 262| niestabilny numerycznie | e^{\frac{Capex per Share - \overline{Capex per Share}}{\sigma_{Capex per Share}}}
+Model 263| niestabilny numerycznie | Net Income Growth^3
+Model 264| niestabilny numerycznie | Inventory Growth^3
+Model 265| niestabilny numerycznie | Capex per Share^3
+Model 266| niestabilny numerycznie | Deposit Liabilities^3
+Model 267| niestabilny numerycznie | Net Income Growth
+Model 268| niestabilny numerycznie | eBITperRevenue^3
+Model 269| niestabilny numerycznie | dividendpaidAndCapexCoverageRatios^3
+Model 270| niestabilny numerycznie | Issuance (repayment) of debt
+Model 271| niestabilny numerycznie | Free Cash Flow growth^2
+Model 272| niestabilny numerycznie | SG&A to Revenue^3
+Model 273| niestabilny numerycznie | Net Income per Share
+Model 274| niestabilny numerycznie | Income Tax Expense
+Model 275| niestabilny numerycznie | e^{\frac{Tax Liabilities - \overline{Tax Liabilities}}{\sigma_{Tax Liabilities}}}
+Model 276| niestabilny numerycznie | Earnings Yield^2
+Model 277| niestabilny numerycznie | e^{\frac{Total shareholders equity - \overline{Total shareholders equity}}{\sigma_{Total shareholders equity}}}
+Model 278| niestabilny numerycznie | Profit Margin^2
+Model 279| niestabilny numerycznie | R&D Expenses
+Model 280| niestabilny numerycznie | Industrials
+Model 281| niestabilny numerycznie | Net Income - Discontinued ops
+Model 282| niestabilny numerycznie | e^{\frac{Capex to Depreciation - \overline{Capex to Depreciation}}{\sigma_{Capex to Depreciation}}}
+Model 283| niestabilny numerycznie | Days Payables Outstanding^3
+Model 284| niestabilny numerycznie | SG&A Expense
+Model 285| niestabilny numerycznie | 3Y Shareholders Equity Growth (per Share)^3
+Model 286| niestabilny numerycznie | e^{\frac{Debt to Assets - \overline{Debt to Assets}}{\sigma_{Debt to Assets}}}
+Model 287| niestabilny numerycznie | e^{\frac{payablesTurnover - \overline{payablesTurnover}}{\sigma_{payablesTurnover}}}
+Model 288| niestabilny numerycznie | Revenue per Share^2
+Model 289| niestabilny numerycznie | eBITperRevenue
+Model 290| niestabilny numerycznie | 3Y Dividend per Share Growth (per Share)
+Model 291| niestabilny numerycznie | Revenue per Share
+Model 292| niestabilny numerycznie | Net Income per Share^2
+Model 293| niestabilny numerycznie | POCF ratio^3
+Model 294| niestabilny numerycznie | Consumer Cyclical
+Model 295| niestabilny numerycznie | e^{\frac{EBITDA - \overline{EBITDA}}{\sigma_{EBITDA}}}
+Model 296| niestabilny numerycznie | Weighted Average Shs Out (Dil)^2
+Model 297| niestabilny numerycznie | Intangibles to Total Assets^3
+Model 298| niestabilny numerycznie | 3Y Revenue Growth (per Share)
+Model 299| niestabilny numerycznie | assetTurnover
+Model 300| niestabilny numerycznie | e^{\frac{priceToOperatingCashFlowsRatio - \overline{priceToOperatingCashFlowsRatio}}{\sigma_{priceToOperatingCashFlowsRatio}}}
+Model 301| niestabilny numerycznie | Other Assets^3
+Model 302| niestabilny numerycznie | e^{\frac{Price to Sales Ratio - \overline{Price to Sales Ratio}}{\sigma_{Price to Sales Ratio}}}
+Model 303| niestabilny numerycznie | Net cash flow / Change in cash
+Model 304| niestabilny numerycznie | EBIT Margin
+Model 305| niestabilny numerycznie | e^{\frac{Dividend per Share - \overline{Dividend per Share}}{\sigma_{Dividend per Share}}}
+Model 306| niestabilny numerycznie | Free Cash Flow^3
+Model 307| niestabilny numerycznie | Debt Growth^2
+Model 308| niestabilny numerycznie | Inventory Growth^2
+Model 309| niestabilny numerycznie | Cash per Share
+Model 310| niestabilny numerycznie | e^{\frac{Net Income Com - \overline{Net Income Com}}{\sigma_{Net Income Com}}}
+Model 311| niestabilny numerycznie | Dividend Yield
+Model 312| niestabilny numerycznie | e^{\frac{Payout Ratio - \overline{Payout Ratio}}{\sigma_{Payout Ratio}}}
+Model 313| niestabilny numerycznie | quickRatio^2
+Model 314| niestabilny numerycznie | Payout Ratio^2
+Model 315| niestabilny numerycznie | e^{\frac{Dividend Yield - \overline{Dividend Yield}}{\sigma_{Dividend Yield}}}
+Model 316| niestabilny numerycznie | e^{\frac{Short-term debt - \overline{Short-term debt}}{\sigma_{Short-term debt}}}
+Model 317| niestabilny numerycznie | Free Cash Flow per Share
+Model 318| niestabilny numerycznie | Inventory Turnover
+Model 319| niestabilny numerycznie | Free Cash Flow margin^2
+Model 320| niestabilny numerycznie | Dividend per Share
+Model 321| niestabilny numerycznie | Long-term debt
+Model 322| niestabilny numerycznie | Payables
+Model 323| niestabilny numerycznie | R&D Expenses^2
+Model 324| niestabilny numerycznie | e^{\frac{Days Payables Outstanding - \overline{Days Payables Outstanding}}{\sigma_{Days Payables Outstanding}}}
+Model 325| niestabilny numerycznie | Gross Margin^2
+Model 326| niestabilny numerycznie | dividendpaidAndCapexCoverageRatios^2
+Model 327| niestabilny numerycznie | Long-term investments^2
+Model 328| niestabilny numerycznie | Other Liabilities^2
+Model 329| niestabilny numerycznie | Book Value per Share^2
+Model 330| niestabilny numerycznie | Tax Liabilities
+Model 331| niestabilny numerycznie | Asset Growth^2
+Model 332| niestabilny numerycznie | e^{\frac{EPS Growth - \overline{EPS Growth}}{\sigma_{EPS Growth}}}
+Model 333| niestabilny numerycznie | Net Debt to EBITDA^3
+Model 334| niestabilny numerycznie | Invested Capital^2
+Model 335| niestabilny numerycznie | e^{\frac{quickRatio - \overline{quickRatio}}{\sigma_{quickRatio}}}
+Model 336| niestabilny numerycznie | e^{\frac{Operating Cash Flow growth - \overline{Operating Cash Flow growth}}{\sigma_{Operating Cash Flow growth}}}
+Model 337| niestabilny numerycznie | Tangible Asset Value^3
+Model 338| niestabilny numerycznie | e^{\frac{pretaxProfitMargin - \overline{pretaxProfitMargin}}{\sigma_{pretaxProfitMargin}}}
+Model 339| niestabilny numerycznie | Tangible Asset Value^2
+Model 340| niestabilny numerycznie | priceToFreeCashFlowsRatio^3
+Model 341| niestabilny numerycznie | Operating Cash Flow^2
+Model 342| niestabilny numerycznie | capitalExpenditureCoverageRatios^2
+Model 343| niestabilny numerycznie | Real Estate
+Model 344| niestabilny numerycznie | e^{\frac{Operating Expenses - \overline{Operating Expenses}}{\sigma_{Operating Expenses}}}
+Model 345| niestabilny numerycznie | Acquisitions and disposals^2
+Model 346| niestabilny numerycznie | Debt to Assets^3
+Model 347| niestabilny numerycznie | Inventories^2
+Model 348| niestabilny numerycznie | Earnings before Tax
+Model 349| niestabilny numerycznie | Days Sales Outstanding
+Model 350| niestabilny numerycznie | Dividends per Share Growth
+Model 351| niestabilny numerycznie | Net Profit Margin^3
+Model 352| niestabilny numerycznie | Total liabilities^3
+Model 353| niestabilny numerycznie | e^{\frac{Retained earnings (deficit) - \overline{Retained earnings (deficit)}}{\sigma_{Retained earnings (deficit)}}}
+Model 354| niestabilny numerycznie | Investing Cash flow^3
+Model 355| niestabilny numerycznie | SG&A Expenses Growth^2
+Model 356| niestabilny numerycznie | debtEquityRatio
+Model 357| niestabilny numerycznie | Total shareholders equity^3
+Model 358| niestabilny numerycznie | e^{\frac{Days Sales Outstanding - \overline{Days Sales Outstanding}}{\sigma_{Days Sales Outstanding}}}
+Model 359| niestabilny numerycznie | Tax assets
+Model 360| niestabilny numerycznie | Total shareholders equity
+Model 361| niestabilny numerycznie | Short-term investments^3
+Model 362| niestabilny numerycznie | Consumer Defensive
+Model 363| niestabilny numerycznie | 3Y Net Income Growth (per Share)
+Model 364| niestabilny numerycznie | Capex to Operating Cash Flow^2
+Model 365| niestabilny numerycznie | e^{\frac{Tax assets - \overline{Tax assets}}{\sigma_{Tax assets}}}
+Model 366| niestabilny numerycznie | Issuance (buybacks) of shares^3
+Model 367| niestabilny numerycznie | priceSalesRatio^2
+Model 368| niestabilny numerycznie | Free Cash Flow Yield^3
+Model 369| niestabilny numerycznie | Average Payables
+Model 370| niestabilny numerycznie | e^{\frac{Payables - \overline{Payables}}{\sigma_{Payables}}}
+Model 371| niestabilny numerycznie | Income Quality
+Model 372| niestabilny numerycznie | companyEquityMultiplier^2
+Model 373| niestabilny numerycznie | EBIT Margin^2
+Model 374| niestabilny numerycznie | Other Liabilities
+Model 375| niestabilny numerycznie | Deposit Liabilities^2
+Model 376| niestabilny numerycznie | Gross Profit^3
+Model 377| niestabilny numerycznie | POCF ratio^2
+Model 378| niestabilny numerycznie | grossProfitMargin
+Model 379| niestabilny numerycznie | e^{\frac{Deposit Liabilities - \overline{Deposit Liabilities}}{\sigma_{Deposit Liabilities}}}
+Model 380| niestabilny numerycznie | e^{\frac{eBITperRevenue - \overline{eBITperRevenue}}{\sigma_{eBITperRevenue}}}
+Model 381| niestabilny numerycznie | Acquisitions and disposals^3
+Model 382| niestabilny numerycznie | Deferred revenue^2
+Model 383| niestabilny numerycznie | e^{\frac{assetTurnover - \overline{assetTurnover}}{\sigma_{assetTurnover}}}
+Model 384| niestabilny numerycznie | Net Debt to EBITDA
+Model 385| niestabilny numerycznie | Market Cap
+Model 386| niestabilny numerycznie | Invested Capital^3
+Model 387| niestabilny numerycznie | Free Cash Flow per Share^3
+Model 388| niestabilny numerycznie | e^{\frac{Operating Cash Flow per Share - \overline{Operating Cash Flow per Share}}{\sigma_{Operating Cash Flow per Share}}}
+Model 389| niestabilny numerycznie | Dividend payments^2
+Model 390| niestabilny numerycznie | Effect of forex changes on cash^3
+Model 391| niestabilny numerycznie | Receivables Turnover
+Model 392| niestabilny numerycznie | e^{\frac{Shareholders Equity per Share - \overline{Shareholders Equity per Share}}{\sigma_{Shareholders Equity per Share}}}
+Model 393| niestabilny numerycznie | Capex to Depreciation
+Model 394| niestabilny numerycznie | Earnings Yield^3
+Model 395| niestabilny numerycznie | debtEquityRatio^2
+Model 396| niestabilny numerycznie | Deposit Liabilities
+Model 397| niestabilny numerycznie | Depreciation & Amortization^2
+Model 398| niestabilny numerycznie | e^{\frac{Net cash flow / Change in cash - \overline{Net cash flow / Change in cash}}{\sigma_{Net cash flow / Change in cash}}}
+Model 399| niestabilny numerycznie | e^{\frac{Revenue Growth - \overline{Revenue Growth}}{\sigma_{Revenue Growth}}}
+Model 400| niestabilny numerycznie | e^{\frac{SG&A Expense - \overline{SG&A Expense}}{\sigma_{SG&A Expense}}}
+Model 401| niestabilny numerycznie | R&D Expense Growth^3
+Model 402| niestabilny numerycznie | EBIT Growth^3
+Model 403| niestabilny numerycznie | e^{\frac{returnOnEquity - \overline{returnOnEquity}}{\sigma_{returnOnEquity}}}
+Model 404| niestabilny numerycznie | operatingCashFlowSalesRatio
+Model 405| niestabilny numerycznie | dividendYield
+Model 406| niestabilny numerycznie | dividendpaidAndCapexCoverageRatios
+Model 407| niestabilny numerycznie | e^{\frac{EPS Diluted - \overline{EPS Diluted}}{\sigma_{EPS Diluted}}}
+Model 408| niestabilny numerycznie | Consolidated Income^2
+Model 409| niestabilny numerycznie | Net Cash/Marketcap
+Model 410| niestabilny numerycznie | currentRatio^3
+Model 411| niestabilny numerycznie | Net Income - Non-Controlling int
+Model 412| niestabilny numerycznie | R&D to Revenue
+Model 413| niestabilny numerycznie | debtRatio^3
+Model 414| niestabilny numerycznie | e^{\frac{Weighted Average Shares Growth - \overline{Weighted Average Shares Growth}}{\sigma_{Weighted Average Shares Growth}}}
+Model 415| niestabilny numerycznie | e^{\frac{Days of Inventory on Hand - \overline{Days of Inventory on Hand}}{\sigma_{Days of Inventory on Hand}}}
+Model 416| niestabilny numerycznie | Capital Expenditure^2
+Model 417| niestabilny numerycznie | Market Cap^3
+Model 418| niestabilny numerycznie | Capex to Depreciation^2
+Model 419| niestabilny numerycznie | e^{\frac{Debt Growth - \overline{Debt Growth}}{\sigma_{Debt Growth}}}
+Model 420| niestabilny numerycznie | Earnings Before Tax Margin^3
+Model 421| niestabilny numerycznie | e^{\frac{dividendpaidAndCapexCoverageRatios - \overline{dividendpaidAndCapexCoverageRatios}}{\sigma_{dividendpaidAndCapexCoverageRatios}}}
+Model 422| niestabilny numerycznie | Book Value per Share
+Model 423| niestabilny numerycznie | fixedAssetTurnover^3
+Model 424| niestabilny numerycznie | Short-term investments^2
+Model 425| niestabilny numerycznie | Long-term debt^2
+Model 426| niestabilny numerycznie | e^{\frac{Financial Services - \overline{Financial Services}}{\sigma_{Financial Services}}}
+Model 427| niestabilny numerycznie | Income Tax Expense^2
+Model 428| niestabilny numerycznie | Shareholders Equity per Share^3
+Model 429| niestabilny numerycznie | Weighted Average Shs Out (Dil)^3
+Model 430| niestabilny numerycznie | fixedAssetTurnover^2
+Model 431| niestabilny numerycznie | Operating Cash Flow growth
+Model 432| niestabilny numerycznie | pretaxProfitMargin
+Model 433| niestabilny numerycznie | Total current assets
+Model 434| niestabilny numerycznie | e^{\frac{Dividends per Share Growth - \overline{Dividends per Share Growth}}{\sigma_{Dividends per Share Growth}}}
+Model 435| niestabilny numerycznie | Dividend Yield^3
+Model 436| niestabilny numerycznie | e^{\frac{Consolidated Income - \overline{Consolidated Income}}{\sigma_{Consolidated Income}}}
+Model 437| niestabilny numerycznie | Debt Growth
+Model 438| niestabilny numerycznie | e^{\frac{ROE - \overline{ROE}}{\sigma_{ROE}}}
+Model 439| niestabilny numerycznie | capitalExpenditureCoverageRatios^3
+Model 440| niestabilny numerycznie | e^{\frac{Net Debt - \overline{Net Debt}}{\sigma_{Net Debt}}}
+Model 441| niestabilny numerycznie | Cash and short-term investments^3
+Model 442| niestabilny numerycznie | Depreciation & Amortization
+Model 443| niestabilny numerycznie | Property, Plant & Equipment Net^3
+Model 444| niestabilny numerycznie | Operating Expenses^2
+Model 445| niestabilny numerycznie | EPS Diluted Growth
+Model 446| niestabilny numerycznie | e^{\frac{Short-term investments - \overline{Short-term investments}}{\sigma_{Short-term investments}}}
+Model 447| niestabilny numerycznie | e^{\frac{Invested Capital - \overline{Invested Capital}}{\sigma_{Invested Capital}}}
+Model 448| niestabilny numerycznie | e^{\frac{payoutRatio - \overline{payoutRatio}}{\sigma_{payoutRatio}}}
+Model 449| niestabilny numerycznie | totalDebtToCapitalization^2
+Model 450| niestabilny numerycznie | Earnings before Tax^2
+Model 451| niestabilny numerycznie | Weighted Average Shares Growth
+Model 452| niestabilny numerycznie | EPS Diluted Growth^2
+Model 453| niestabilny numerycznie | Interest Expense^3
+Model 454| niestabilny numerycznie | Free Cash Flow Yield^2
+Model 455| niestabilny numerycznie | SG&A to Revenue^2
+Model 456| niestabilny numerycznie | R&D Expense Growth^2
+Model 457| niestabilny numerycznie | e^{\frac{3Y Revenue Growth (per Share) - \overline{3Y Revenue Growth (per Share)}}{\sigma_{3Y Revenue Growth (per Share)}}}
+Model 458| niestabilny numerycznie | inventoryTurnover^2
+Model 459| niestabilny numerycznie | 3Y Shareholders Equity Growth (per Share)^2
+Model 460| niestabilny numerycznie | e^{\frac{3Y Dividend per Share Growth (per Share) - \overline{3Y Dividend per Share Growth (per Share)}}{\sigma_{3Y Dividend per Share Growth (per Share)}}}
+Model 461| niestabilny numerycznie | e^{\frac{Property, Plant & Equipment Net - \overline{Property, Plant & Equipment Net}}{\sigma_{Property, Plant & Equipment Net}}}
+Model 462| niestabilny numerycznie | Short-term debt^3
+Model 463| niestabilny numerycznie | EPS
+Model 464| niestabilny numerycznie | debtEquityRatio^3
+Model 465| niestabilny numerycznie | inventoryTurnover^3
+Model 466| niestabilny numerycznie | assetTurnover^3
+Model 467| niestabilny numerycznie | Net Debt
+Model 468| niestabilny numerycznie | Net Income - Non-Controlling int^3
+Model 469| niestabilny numerycznie | Dividend payments^3
+Model 470| niestabilny numerycznie | Preferred Dividends^3
+Model 471| niestabilny numerycznie | PFCF ratio^2
+Model 472| niestabilny numerycznie | e^{\frac{grossProfitMargin - \overline{grossProfitMargin}}{\sigma_{grossProfitMargin}}}
+Model 473| niestabilny numerycznie | 3Y Revenue Growth (per Share)^2
+Model 474| niestabilny numerycznie | Other comprehensive income
+Model 475| niestabilny numerycznie | e^{\frac{Capex to Operating Cash Flow - \overline{Capex to Operating Cash Flow}}{\sigma_{Capex to Operating Cash Flow}}}
+Model 476| niestabilny numerycznie | Investment purchases and sales
+Model 477| niestabilny numerycznie | e^{\frac{Free Cash Flow - \overline{Free Cash Flow}}{\sigma_{Free Cash Flow}}}
+Model 478| niestabilny numerycznie | Capex per Share^2
+Model 479| niestabilny numerycznie | Free Cash Flow growth^3
+Model 480| niestabilny numerycznie | Cash and cash equivalents
+Model 481| niestabilny numerycznie | Other Assets
+Model 482| niestabilny numerycznie | Revenue^2
+Model 483| niestabilny numerycznie | Shareholders Equity per Share
+Model 484| niestabilny numerycznie | Short-term investments
+Model 485| niestabilny numerycznie | Weighted Average Shs Out^2
+Model 486| niestabilny numerycznie | Interest Expense
+Model 487| niestabilny numerycznie | R&D to Revenue^3
+Model 488| niestabilny numerycznie | e^{\frac{Net Income Growth - \overline{Net Income Growth}}{\sigma_{Net Income Growth}}}
+Model 489| niestabilny numerycznie | e^{\frac{Investment purchases and sales - \overline{Investment purchases and sales}}{\sigma_{Investment purchases and sales}}}
+Model 490| niestabilny numerycznie | Cash and cash equivalents^3
+Model 491| niestabilny numerycznie | Operating Cash Flow growth^2
+Model 492| niestabilny numerycznie | Days of Inventory on Hand
+Model 493| niestabilny numerycznie | e^{\frac{Receivables Turnover - \overline{Receivables Turnover}}{\sigma_{Receivables Turnover}}}
+Model 494| niestabilny numerycznie | Capex to Revenue
+Model 495| niestabilny numerycznie | e^{\frac{Receivables growth - \overline{Receivables growth}}{\sigma_{Receivables growth}}}
+Model 496| niestabilny numerycznie | Operating Cash Flow per Share^2
+Model 497| niestabilny numerycznie | e^{\frac{Financing Cash Flow - \overline{Financing Cash Flow}}{\sigma_{Financing Cash Flow}}}
+Model 498| niestabilny numerycznie | Short-term debt^2
+Model 499| niestabilny numerycznie | dividendYield^2
+Model 500| niestabilny numerycznie | e^{\frac{Long-term debt - \overline{Long-term debt}}{\sigma_{Long-term debt}}}
+Model 501| niestabilny numerycznie | netProfitMargin^3
+Model 502| niestabilny numerycznie | dividendYield^3
+Model 503| niestabilny numerycznie | Consolidated Income
+Model 504| niestabilny numerycznie | e^{\frac{longtermDebtToCapitalization - \overline{longtermDebtToCapitalization}}{\sigma_{longtermDebtToCapitalization}}}
+Model 505| niestabilny numerycznie | payablesTurnover
+Model 506| niestabilny numerycznie | Interest Coverage^2
+Model 507| niestabilny numerycznie | Weighted Average Shares Growth^3
+Model 508| niestabilny numerycznie | e^{\frac{Free Cash Flow growth - \overline{Free Cash Flow growth}}{\sigma_{Free Cash Flow growth}}}
+Model 509| niestabilny numerycznie | eBITperRevenue^2
+Model 510| niestabilny numerycznie | e^{\frac{Inventory Turnover - \overline{Inventory Turnover}}{\sigma_{Inventory Turnover}}}
+Model 511| niestabilny numerycznie | operatingCashFlowSalesRatio^2
+Model 512| niestabilny numerycznie | priceToSalesRatio
+Model 513| niestabilny numerycznie | Payables Turnover^3
+Model 514| niestabilny numerycznie | Issuance (repayment) of debt^3
+Model 515| niestabilny numerycznie | e^{\frac{Operating Income Growth - \overline{Operating Income Growth}}{\sigma_{Operating Income Growth}}}
+Model 516| niestabilny numerycznie | Cost of Revenue^2
+Model 517| niestabilny numerycznie | EBITDA^3
+Model 518| niestabilny numerycznie | daysOfPayablesOutstanding^2
+Model 519| niestabilny numerycznie | e^{\frac{Tangible Book Value per Share - \overline{Tangible Book Value per Share}}{\sigma_{Tangible Book Value per Share}}}
+Model 520| niestabilny numerycznie | Issuance (repayment) of debt^2
+Model 521| niestabilny numerycznie | e^{\frac{ebitperRevenue - \overline{ebitperRevenue}}{\sigma_{ebitperRevenue}}}
+Model 522| niestabilny numerycznie | e^{\frac{Consumer Cyclical - \overline{Consumer Cyclical}}{\sigma_{Consumer Cyclical}}}
+Model 523| niestabilny numerycznie | Stock-based compensation^3
+Model 524| niestabilny numerycznie | PE ratio^3
+Model 525| niestabilny numerycznie | Tangible Book Value per Share^2
+Model 526| niestabilny numerycznie | Income Tax Expense^3
+Model 527| niestabilny numerycznie | Gross Margin
+Model 528| niestabilny numerycznie | Graham Net-Net^2
+Model 529| niestabilny numerycznie | Gross Profit
+Model 530| niestabilny numerycznie | Receivables growth^2
+Model 531| niestabilny numerycznie | e^{\frac{Revenue - \overline{Revenue}}{\sigma_{Revenue}}}
+Model 532| niestabilny numerycznie | Total current assets^3
+Model 533| niestabilny numerycznie | e^{\frac{debtRatio - \overline{debtRatio}}{\sigma_{debtRatio}}}
+Model 534| niestabilny numerycznie | Shareholders Equity per Share^2
+Model 535| niestabilny numerycznie | e^{\frac{Gross Margin - \overline{Gross Margin}}{\sigma_{Gross Margin}}}
+Model 536| niestabilny numerycznie | Total current liabilities^3
+Model 537| niestabilny numerycznie | Effect of forex changes on cash
+Model 538| niestabilny numerycznie | e^{\frac{debtEquityRatio - \overline{debtEquityRatio}}{\sigma_{debtEquityRatio}}}
+Model 539| niestabilny numerycznie | e^{\frac{Profit Margin - \overline{Profit Margin}}{\sigma_{Profit Margin}}}
+Model 540| niestabilny numerycznie | Long-term investments^3
+Model 541| niestabilny numerycznie | e^{\frac{priceEarningsRatio - \overline{priceEarningsRatio}}{\sigma_{priceEarningsRatio}}}
+Model 542| niestabilny numerycznie | Net cash flow / Change in cash^2
+Model 543| niestabilny numerycznie | Net cash flow / Change in cash^3
+Model 544| niestabilny numerycznie | Dividend payments
+Model 545| niestabilny numerycznie | Healthcare
+Model 546| niestabilny numerycznie | Gross Profit Growth^3
+Model 547| niestabilny numerycznie | Days Payables Outstanding
+Model 548| niestabilny numerycznie | e^{\frac{EBITDA Margin - \overline{EBITDA Margin}}{\sigma_{EBITDA Margin}}}
+Model 549| niestabilny numerycznie | Tax assets^3
+Model 550| niestabilny numerycznie | e^{\frac{Capital Expenditure - \overline{Capital Expenditure}}{\sigma_{Capital Expenditure}}}
+Model 551| niestabilny numerycznie | Issuance (buybacks) of shares
+Model 552| niestabilny numerycznie | Total debt
+Model 553| niestabilny numerycznie | e^{\frac{Net Income per Share - \overline{Net Income per Share}}{\sigma_{Net Income per Share}}}
+Model 554| niestabilny numerycznie | e^{\frac{fixedAssetTurnover - \overline{fixedAssetTurnover}}{\sigma_{fixedAssetTurnover}}}
+Model 555| niestabilny numerycznie | R&D Expense Growth
+Model 556| niestabilny numerycznie | e^{\frac{Interest Debt per Share - \overline{Interest Debt per Share}}{\sigma_{Interest Debt per Share}}}
+Model 557| niestabilny numerycznie | Net Income Growth^2
+Model 558| niestabilny numerycznie | operatingCashFlowPerShare
+Model 559| niestabilny numerycznie | Revenue^3
+Model 560| niestabilny numerycznie | priceToSalesRatio^2
+Model 561| niestabilny numerycznie | cashRatio^3
+Model 562| niestabilny numerycznie | Investments
+Model 563| niestabilny numerycznie | 3Y Dividend per Share Growth (per Share)^3
+Model 564| niestabilny numerycznie | Tangible Book Value per Share^3
+Model 565| niestabilny numerycznie | e^{\frac{netProfitMargin - \overline{netProfitMargin}}{\sigma_{netProfitMargin}}}
+Model 566| niestabilny numerycznie | Free Cash Flow per Share^2
+Model 567| niestabilny numerycznie | ebitperRevenue
+Model 568| niestabilny numerycznie | Capex to Operating Cash Flow
+Model 569| niestabilny numerycznie | e^{\frac{Net Debt to EBITDA - \overline{Net Debt to EBITDA}}{\sigma_{Net Debt to EBITDA}}}
+Model 570| niestabilny numerycznie | Gross Profit^2
+Model 571| niestabilny numerycznie | EBITDA
+Model 572| niestabilny numerycznie | Stock-based compensation
+Model 573| niestabilny numerycznie | e^{\frac{Industrials - \overline{Industrials}}{\sigma_{Industrials}}}
+Model 574| niestabilny numerycznie | Revenue Growth^2
+Model 575| niestabilny numerycznie | e^{\frac{priceToSalesRatio - \overline{priceToSalesRatio}}{\sigma_{priceToSalesRatio}}}
+Model 576| niestabilny numerycznie | Free Cash Flow growth
+Model 577| niestabilny numerycznie | Dividends per Share Growth^3
+Model 578| niestabilny numerycznie | grossProfitMargin^3
+Model 579| niestabilny numerycznie | e^{\frac{EBIT Margin - \overline{EBIT Margin}}{\sigma_{EBIT Margin}}}
+Model 580| niestabilny numerycznie | interestCoverage^2
+Model 581| niestabilny numerycznie | Average Receivables^3
+Model 582| niestabilny numerycznie | Book Value per Share Growth
+Model 583| niestabilny numerycznie | totalDebtToCapitalization
+Model 584| niestabilny numerycznie | Stock-based compensation to Revenue^3
+Model 585| niestabilny numerycznie | payablesTurnover^2
+Model 586| niestabilny numerycznie | e^{\frac{Gross Profit - \overline{Gross Profit}}{\sigma_{Gross Profit}}}
+Model 587| niestabilny numerycznie | Free Cash Flow^2
+Model 588| niestabilny numerycznie | SG&A Expense^2
+Model 589| niestabilny numerycznie | Operating Cash Flow per Share^3
+Model 590| niestabilny numerycznie | priceEarningsRatio^2
+Model 591| niestabilny numerycznie | R&D Expenses^3
+Model 592| niestabilny numerycznie | e^{\frac{R&D Expense Growth - \overline{R&D Expense Growth}}{\sigma_{R&D Expense Growth}}}
+Model 593| niestabilny numerycznie | Receivables^3
+Model 594| niestabilny numerycznie | Acquisitions and disposals
+Model 595| niestabilny numerycznie | Net Debt to EBITDA^2
+Model 596| niestabilny numerycznie | Days Sales Outstanding^2
+Model 597| niestabilny numerycznie | PE ratio^2
+Model 598| niestabilny numerycznie | Total current assets^2
+Model 599| niestabilny numerycznie | ROE^3
+Model 600| niestabilny numerycznie | freeCashFlowPerShare^3
+Model 601| niestabilny numerycznie | Payout Ratio
+Model 602| niestabilny numerycznie | Debt Growth^3
+Model 603| niestabilny numerycznie | Receivables
+Model 604| niestabilny numerycznie | e^{\frac{Weighted Average Shares Diluted Growth - \overline{Weighted Average Shares Diluted Growth}}{\sigma_{Weighted Average Shares Diluted Growth}}}
+Model 605| niestabilny numerycznie | e^{\frac{Book Value per Share Growth - \overline{Book Value per Share Growth}}{\sigma_{Book Value per Share Growth}}}
+Model 606| niestabilny numerycznie | Property, Plant & Equipment Net
+Model 607| niestabilny numerycznie | Investment purchases and sales^2
+Model 608| niestabilny numerycznie | e^{\frac{Net Income - \overline{Net Income}}{\sigma_{Net Income}}}
+Model 609| niestabilny numerycznie | e^{\frac{Inventory Growth - \overline{Inventory Growth}}{\sigma_{Inventory Growth}}}
+Model 610| niestabilny numerycznie | Weighted Average Shs Out (Dil)
+Model 611| niestabilny numerycznie | priceToOperatingCashFlowsRatio^2
+Model 612| niestabilny numerycznie | Net Income per Share^3
+Model 613| niestabilny numerycznie | assetTurnover^2
+Model 614| niestabilny numerycznie | e^{\frac{cashRatio - \overline{cashRatio}}{\sigma_{cashRatio}}}
+Model 615| niestabilny numerycznie | e^{\frac{Technology - \overline{Technology}}{\sigma_{Technology}}}
+Model 616| niestabilny numerycznie | Operating Income^3
+Model 617| niestabilny numerycznie | e^{\frac{Net Income - Discontinued ops - \overline{Net Income - Discontinued ops}}{\sigma_{Net Income - Discontinued ops}}}
+Model 618| niestabilny numerycznie | Operating Cash Flow per Share
+Model 619| niestabilny numerycznie | Receivables Turnover^3
+Model 620| niestabilny numerycznie | 3Y Operating CF Growth (per Share)^2
+Model 621| niestabilny numerycznie | Price to Sales Ratio^2
+Model 622| niestabilny numerycznie | Inventory Turnover^2
+Model 623| niestabilny numerycznie | e^{\frac{dividendYield - \overline{dividendYield}}{\sigma_{dividendYield}}}
+Model 624| niestabilny numerycznie | e^{\frac{Stock-based compensation to Revenue - \overline{Stock-based compensation to Revenue}}{\sigma_{Stock-based compensation to Revenue}}}
+Model 625| niestabilny numerycznie | payablesTurnover^3
+Model 626| niestabilny numerycznie | Stock-based compensation^2
+Model 627| niestabilny numerycznie | priceFairValue^3
+Model 628| niestabilny numerycznie | e^{\frac{Total current assets - \overline{Total current assets}}{\sigma_{Total current assets}}}
+Model 629| niestabilny numerycznie | Debt to Assets
+Model 630| niestabilny numerycznie | 3Y Shareholders Equity Growth (per Share)
+Model 631| niestabilny numerycznie | e^{\frac{Issuance (buybacks) of shares - \overline{Issuance (buybacks) of shares}}{\sigma_{Issuance (buybacks) of shares}}}
+Model 632| niestabilny numerycznie | Price to Sales Ratio^3
+Model 633| niestabilny numerycznie | e^{\frac{Dividend payments - \overline{Dividend payments}}{\sigma_{Dividend payments}}}
+Model 634| niestabilny numerycznie | debtRatio
+Model 635| niestabilny numerycznie | SG&A to Revenue
+Model 636| niestabilny numerycznie | e^{\frac{Net Cash/Marketcap - \overline{Net Cash/Marketcap}}{\sigma_{Net Cash/Marketcap}}}
+Model 637| niestabilny numerycznie | quickRatio
+Model 638| niestabilny numerycznie | Graham Net-Net
+Model 639| niestabilny numerycznie | priceFairValue^2
+Model 640| niestabilny numerycznie | Operating Income^2
+Model 641| niestabilny numerycznie | Profit Margin
+Model 642| niestabilny numerycznie | e^{\frac{interestCoverage - \overline{interestCoverage}}{\sigma_{interestCoverage}}}
+Model 643| niestabilny numerycznie | longtermDebtToCapitalization^2
+Model 644| niestabilny numerycznie | daysOfSalesOutstanding^2
+Model 645| niestabilny numerycznie | Goodwill and Intangible Assets
+Model 646| niestabilny numerycznie | Income Quality^2
+Model 647| niestabilny numerycznie | Retained earnings (deficit)^3
+Model 648| niestabilny numerycznie | e^{\frac{Long-term investments - \overline{Long-term investments}}{\sigma_{Long-term investments}}}
+Model 649| niestabilny numerycznie | ROE
+Model 650| niestabilny numerycznie | priceEarningsRatio^3
+Model 651| niestabilny numerycznie | PFCF ratio
+Model 652| niestabilny numerycznie | e^{\frac{Interest Expense - \overline{Interest Expense}}{\sigma_{Interest Expense}}}
+Model 653| niestabilny numerycznie | currentRatio^2
+Model 654| niestabilny numerycznie | Capital Expenditure
+Model 655| niestabilny numerycznie | e^{\frac{daysOfInventoryOutstanding - \overline{daysOfInventoryOutstanding}}{\sigma_{daysOfInventoryOutstanding}}}
+Model 656| niestabilny numerycznie | longtermDebtToCapitalization^3
+Model 657| niestabilny numerycznie | e^{\frac{EBIT - \overline{EBIT}}{\sigma_{EBIT}}}
+Model 658| niestabilny numerycznie | Operating Income
+Model 659| niestabilny numerycznie | e^{\frac{Total current liabilities - \overline{Total current liabilities}}{\sigma_{Total current liabilities}}}
+Model 660| niestabilny numerycznie | e^{\frac{Earnings Yield - \overline{Earnings Yield}}{\sigma_{Earnings Yield}}}
+Model 661| niestabilny numerycznie | Communication Services
+Model 662| niestabilny numerycznie | EPS Diluted^3
+Model 663| niestabilny numerycznie | Payables^2
+Model 664| niestabilny numerycznie | Operating Expenses
+Model 665| niestabilny numerycznie | Other comprehensive income^2
+Model 666| niestabilny numerycznie | Interest Coverage^3
+Model 667|0.1228994305338061|38.67257311220614|4/10|63|Net Current Asset Value^3|38.60861761443756|41.62318225668445
+Model 667| niestabilny numerycznie | Dividend Yield^2
+Model 668|0.0787795779495696|38.478894369056036|4/10|62|Net Current Asset Value^3|38.60864719280152|40.986715867992366
+Model 668|0.8572313515395971|40.320489091071536|4/10|62|Net Current Asset Value^3|38.57530702458759|65.29384633799036
+Model 668|0.8572313515395971|40.320489091071536|4/10|62|Net Current Asset Value^3|38.57530702458759|65.29384633799036
+Model 668|0.6304519201576037|40.05635713589877|4/10|62|Net Current Asset Value^3|38.57605766639362|41.641301486704656
+Model 669| niestabilny numerycznie | Stock-based compensation to Revenue^2
+Model 670| niestabilny numerycznie | e^{\frac{Consumer Defensive - \overline{Consumer Defensive}}{\sigma_{Consumer Defensive}}}
+Model 671| niestabilny numerycznie | Asset Growth
+Model 672|0.1309912727806024|40.43383880850158|3/10|58|Goodwill and Intangible Assets^3|38.460213153298625|41.49035679742549
+Model 672|0.20802364535224155|38.6538906583995|4/10|58|Goodwill and Intangible Assets^3|38.51265538634567|77.8201996125445
+Model 672|0.20802364535224155|38.6538906583995|4/10|58|Goodwill and Intangible Assets^3|38.51265538634567|77.8201996125445
+Model 672| niestabilny numerycznie | e^{\frac{Average Payables - \overline{Average Payables}}{\sigma_{Average Payables}}}
+Model 673| niestabilny numerycznie | EPS Diluted
+Model 674|0.03502173669048113|39.3471668835412|4/10|56|Goodwill and Intangible Assets^3|38.44890431435935|42.16258819669761
+Model 674|0.1710348753216555|38.63085069927811|4/10|56|Goodwill and Intangible Assets^3|38.4326402674336|51.40957170995232
+Model 674|0.1710348753216555|38.63085069927811|4/10|56|Goodwill and Intangible Assets^3|38.4326402674336|51.40957170995232
+Model 674|0.25809949082423106|40.65318550156718|3/10|56|Goodwill and Intangible Assets^3|38.34571047201614|46.950597953862015
+Model 675|0.10067951078534848|38.758556784441836|3/10|55|Capital Expenditure^3|38.438033388595315|41.55963519132069
+Model 675| niestabilny numerycznie | Cash and short-term investments^2
+Model 676| niestabilny numerycznie | Retained earnings (deficit)^2
+Model 677| niestabilny numerycznie | Days of Inventory on Hand^3
+Model 678| niestabilny numerycznie | returnOnEquity
+Model 679| niestabilny numerycznie | e^{\frac{R&D to Revenue - \overline{R&D to Revenue}}{\sigma_{R&D to Revenue}}}
+Model 680| niestabilny numerycznie | EBITDA Margin^3
+Model 681| niestabilny numerycznie | Net Income^2
+Model 682| niestabilny numerycznie | e^{\frac{EPS - \overline{EPS}}{\sigma_{EPS}}}
+Model 683| niestabilny numerycznie | companyEquityMultiplier^3
+Model 684| niestabilny numerycznie | e^{\frac{Cost of Revenue - \overline{Cost of Revenue}}{\sigma_{Cost of Revenue}}}
+Model 685| niestabilny numerycznie | Debt to Equity^2
+Model 686| niestabilny numerycznie | e^{\frac{Issuance (repayment) of debt - \overline{Issuance (repayment) of debt}}{\sigma_{Issuance (repayment) of debt}}}
+Model 687|0.4963918606101282|39.366829589884595|3/10|43|Other comprehensive income^3|38.533649063039334|40.083005284940484
+Model 687|0.006342074676209218|37.84326077484586|4/10|43|Other comprehensive income^3|38.57314123904949|65.75795103651477
+Model 687|0.006342074676209218|37.84326077484586|4/10|43|Other comprehensive income^3|38.57314123904949|65.75795103651477
+Model 687|0.006088016694448602|37.76456137280216|4/10|43|Other comprehensive income^3|38.500765087344774|64.33923908130842
+Model 688| niestabilny numerycznie | e^{\frac{Total debt - \overline{Total debt}}{\sigma_{Total debt}}}
+Model 689| niestabilny numerycznie | Preferred Dividends^2
+Model 690|0.5772475461741529|39.50891779689022|3/10|40|Capital Expenditure^3|38.40674412572487|40.27180565683602
+Model 690|0.006144543358536669|37.77638718890497|4/10|40|Capital Expenditure^3|38.366969516603945|65.11903542485858
+Model 690|0.006144543358536669|37.77638718890497|4/10|40|Capital Expenditure^3|38.366969516603945|65.11903542485858
+Model 690|0.0060552890029115835|37.78379873087541|4/10|40|Capital Expenditure^3|38.36713602895738|65.16587229174162
+Model 691|0.10419603752613482|38.33578659422007|4/10|39|EBIT^3|38.409751274306686|40.06446753851681
+Model 691|0.005934181218627914|37.792700032411915|4/10|39|Net Income Com^3|38.37628745968693|64.93204852039248
+Model 691|0.005934181218627914|37.792700032411915|4/10|39|Net Income Com^3|38.37628745968693|64.93204852039248
+Model 691|0.005950011024470742|37.7858929845297|4/10|39|Net Income Com^3|38.371793713536185|64.79375987404887
+Model 692| niestabilny numerycznie | daysOfSalesOutstanding
+Model 693|0.005952590185521912|37.83497506881048|4/10|37|Net Income Com^3|38.41016420271862|40.063379129393454
+Model 693|0.005802050836791329|37.79565689332261|4/10|37|Net Income Com^3|38.36922878816087|65.20288580977783
+Model 693|0.005802050836791329|37.79565689332261|4/10|37|Net Income Com^3|38.36922878816087|65.20288580977783
+Model 693|0.005798914892492784|37.79655402059548|4/10|37|Net Income Com^3|38.36930722689412|65.21041955822932
+Model 694|0.008049780597837824|37.88805531838034|4/10|36|e^{\frac{companyEquityMultiplier - \overline{companyEquityMultiplier}}{\sigma_{companyEquityMultiplier}}}|422449.10513390554|40.055227076363835
+Model 694|0.005659686734800581|37.816837951362025|4/10|36|e^{\frac{companyEquityMultiplier - \overline{companyEquityMultiplier}}{\sigma_{companyEquityMultiplier}}}|75011.94693150642|65.22984188814866
+Model 694|0.005659686734800581|37.816837951362025|4/10|36|e^{\frac{companyEquityMultiplier - \overline{companyEquityMultiplier}}{\sigma_{companyEquityMultiplier}}}|75011.94693150642|65.22984188814866
+Model 694|0.005657820505321302|37.817413380193784|4/10|36|e^{\frac{companyEquityMultiplier - \overline{companyEquityMultiplier}}{\sigma_{companyEquityMultiplier}}}|203815.98312419764|65.23136529342517
+Model 695|0.005578444919803211|37.85879753432063|4/10|35|Total assets^2|200971.2826229956|39.94131354014012
+Model 695|0.005655953582768909|37.81831114559431|4/10|35|Net Debt^2|559903.3779153692|65.22967684395711
+Model 695|0.005655953582768909|37.81831114559431|4/10|35|Net Debt^2|559903.3779153692|65.22967684395711
+Model 695|0.00565245490339607|37.81929328949999|4/10|35|Net Debt^2|563147.7665371528|65.25209832259378
+Model 696|0.0056867256234128|37.85804530541713|4/10|34|Net Current Asset Value^2|1230074.0085488718|39.866934214211966
+Model 696|0.005655401139892081|37.81890522729074|4/10|34|Net Current Asset Value^2|1145524.6574048884|65.2360600839991
+Model 696|0.005655401139892081|37.81890522729074|4/10|34|Net Current Asset Value^2|1145524.6574048884|65.2360600839991
+Model 696|0.005652059692523969|37.81985076186762|4/10|34|Net Current Asset Value^2|1139985.9379823857|65.24918362744499
+Model 697|0.005750878752938449|37.859154183773974|4/10|33|Net Debt^2|5859573326.460216|40.18986292758306
+Model 697|0.005653563980764423|37.8207901806747|4/10|33|Net Debt^2|6218647948.689689|65.21625197808632
+Model 697|0.005653563980764423|37.8207901806747|4/10|33|Net Debt^2|6218647948.689689|65.21625197808632
+Model 697|0.00565044816971514|37.821738762414796|4/10|33|Net Debt^2|574935404.892966|65.23374290684502
+Model 698|0.005602218820373661|37.86453996845492|4/10|32|e^{\frac{SG&A Expenses Growth - \overline{SG&A Expenses Growth}}{\sigma_{SG&A Expenses Growth}}}|39233747861.944305|39.78405305704875
+Model 698|0.005639256878614407|37.82323667291427|4/10|32|e^{\frac{SG&A Expenses Growth - \overline{SG&A Expenses Growth}}{\sigma_{SG&A Expenses Growth}}}|55446998529.42421|65.24047022317178
+Model 698|0.005639256878614407|37.82323667291427|4/10|32|e^{\frac{SG&A Expenses Growth - \overline{SG&A Expenses Growth}}{\sigma_{SG&A Expenses Growth}}}|55446998529.42421|65.24047022317178
+Model 698|0.005635429953095977|37.82434793046722|4/10|32|e^{\frac{SG&A Expenses Growth - \overline{SG&A Expenses Growth}}{\sigma_{SG&A Expenses Growth}}}|42599702795.66653|65.25440908855334
+Model 699|0.005635456375597374|37.87021316449011|4/10|31|Goodwill and Intangible Assets^2|62023994370.27482|39.95877868438922
+Model 699|0.005606493127353419|37.83160992010584|4/10|31|Goodwill and Intangible Assets^2|60237123715.58136|65.23795315934987
+Model 699|0.005606493127353419|37.83160992010584|4/10|31|Goodwill and Intangible Assets^2|60237123715.58136|65.23795315934987
+Model 699|0.00560307363056529|37.8325996958501|4/10|31|Goodwill and Intangible Assets^2|49873570700.31189|65.25358835925705
+Model 700|0.005682349108884085|37.872254802388674|4/10|30|operatingCashFlowPerShare^3|89573148406.33786|40.09525263382423
+Model 700|0.00559440532053827|37.83430741476072|4/10|30|operatingCashFlowPerShare^3|48036797461.32888|65.13949358795595
+Model 700|0.00559440532053827|37.83430741476072|4/10|30|operatingCashFlowPerShare^3|48036797461.32888|65.13949358795595
+Model 700|0.005591049788954587|37.83525279524804|4/10|30|operatingCashFlowPerShare^3|128575971334.07492|65.14513670943896
+Model 701|0.005460509905788824|37.88475837642995|4/10|29|e^{\frac{SG&A to Revenue - \overline{SG&A to Revenue}}{\sigma_{SG&A to Revenue}}}|29404994116.499126|40.02724512858228
+Model 701|0.005591045659181677|37.83758722166188|4/10|29|e^{\frac{SG&A to Revenue - \overline{SG&A to Revenue}}{\sigma_{SG&A to Revenue}}}|30327246469.808403|65.14832154227888
+Model 701|0.005591045659181677|37.83758722166188|4/10|29|e^{\frac{SG&A to Revenue - \overline{SG&A to Revenue}}{\sigma_{SG&A to Revenue}}}|30327246469.808403|65.14832154227888
+Model 701|0.005587253284627225|37.83866956508731|4/10|29|e^{\frac{SG&A to Revenue - \overline{SG&A to Revenue}}{\sigma_{SG&A to Revenue}}}|29681714909.861347|65.15431399412998
+Model 702|0.005519683511781529|37.888121731736476|4/10|28|Financing Cash Flow^2|9848.572698662547|39.996556843964605
+Model 702|0.005385687939037577|37.84789205036316|4/10|28|Financing Cash Flow^2|9880.643627187645|65.3112652285669
+Model 702|0.005385687939037577|37.84789205036316|4/10|28|Financing Cash Flow^2|9880.643627187645|65.3112652285669
+Model 702|0.005384052361676575|37.84841446881321|4/10|28|Financing Cash Flow^2|9881.731098002909|65.31123390760844
+Model 703|0.005401448027275868|37.88979453295113|4/10|27|Net Income - Non-Controlling int^2|9610.787404458148|40.07071843105806
+Model 703|0.00538550460753323|37.84901526951329|4/10|27|Net Income - Non-Controlling int^2|9645.995721962372|65.3271835410922
+Model 703|0.00538550460753323|37.84901526951329|4/10|27|Net Income - Non-Controlling int^2|9645.995721962372|65.3271835410922
+Model 703|0.005382436683282481|37.850014090430726|4/10|27|Net Income - Non-Controlling int^2|9649.737776214877|65.32277829326345
+Model 704|0.005386908670859807|37.890084504275954|4/10|26|interestCoverage^3|8906.670267243588|40.055989438675624
+Model 704|0.005367339272025115|37.852894855953075|4/10|26|interestCoverage^3|8905.052331677341|65.3050082644612
+Model 704|0.005367339272025115|37.852894855953075|4/10|26|interestCoverage^3|8905.052331677341|65.3050082644612
+Model 704|0.005364216315102424|37.85391350511023|4/10|26|interestCoverage^3|8905.111347275357|65.32012635120815
+Model 705|0.00527663449554088|37.90296733995367|4/10|25|Days of Inventory on Hand^2|8899.410417684925|37.60993045043167
+Model 705|0.005291560771298075|37.86254945996362|4/10|25|Days of Inventory on Hand^2|8897.5878808522|62.932882110787645
+Model 705|0.005291560771298075|37.86254945996362|4/10|25|Days of Inventory on Hand^2|8897.5878808522|62.932882110787645
+Model 705|0.0052883155896882635|37.86363549967737|4/10|25|Days of Inventory on Hand^2|8897.64210690719|62.947784734122266
+Model 706|0.005219580429384453|37.91331519592582|4/10|24|priceSalesRatio^3|64.5991664466234|37.57917470231873
+Model 706|0.005221581846056258|37.87541364243775|4/10|24|priceSalesRatio^3|66.36558102814205|62.92274750378631
+Model 706|0.005221581846056258|37.87541364243775|4/10|24|priceSalesRatio^3|66.36558102814205|62.92274750378631
+Model 706|0.005218930366772846|37.87641401382389|4/10|24|priceSalesRatio^3|66.43925789591914|62.94357369373144
+Model 707|0.005193889899751916|37.91961152434901|4/10|23|e^{\frac{Income Quality - \overline{Income Quality}}{\sigma_{Income Quality}}}|64.53787689040806|37.571939219884435
+Model 707|0.005157706913537839|37.88254845900555|4/10|23|e^{\frac{Income Quality - \overline{Income Quality}}{\sigma_{Income Quality}}}|66.33886367592842|62.942682361174064
+Model 707|0.005157706913537839|37.88254845900555|4/10|23|e^{\frac{Income Quality - \overline{Income Quality}}{\sigma_{Income Quality}}}|66.33886367592842|62.942682361174064
+Model 707|0.005155194974339331|37.883476691032605|4/10|23|e^{\frac{Income Quality - \overline{Income Quality}}{\sigma_{Income Quality}}}|66.4082215509006|62.94049573715025
+Model 708|0.0050093872001203|37.93284438849318|4/10|22|pretaxProfitMargin^3|64.4195713335492|37.576456340123755
+Model 708|0.005009214561466566|37.89412796344591|4/10|22|pretaxProfitMargin^3|66.20496864121482|62.9258119828865
+Model 708|0.005009214561466566|37.89412796344591|4/10|22|pretaxProfitMargin^3|66.20496864121482|62.9258119828865
+Model 708|0.0050067434598225135|37.895092414953936|4/10|22|pretaxProfitMargin^3|66.273798362965|62.939464411090185
+Model 709|0.004204747073527655|37.975179496156336|4/10|21|EPS^2|53.09312242525922|37.546877496548476
+Model 709|0.004251483456385207|37.937192330592495|4/10|21|EPS^2|55.643989437634716|62.815992112878895
+Model 709|0.004251483456385207|37.937192330592495|4/10|21|EPS^2|55.643989437634716|62.815992112878895
+Model 709|0.004252818390636695|37.93797146059428|4/10|21|EPS^2|55.731417271447256|62.84464400244515
+Model 710|0.0037021032815967767|38.00103209084812|4/10|20|e^{\frac{Operating Cash Flow - \overline{Operating Cash Flow}}{\sigma_{Operating Cash Flow}}}|52.954335294759815|37.547370199276735
+Model 710|0.0037885953845232237|37.9616522297934|4/10|20|e^{\frac{Operating Cash Flow - \overline{Operating Cash Flow}}{\sigma_{Operating Cash Flow}}}|55.54459153330396|62.824433019123504
+Model 710|0.0037885953845232237|37.9616522297934|4/10|20|e^{\frac{Operating Cash Flow - \overline{Operating Cash Flow}}{\sigma_{Operating Cash Flow}}}|55.54459153330396|62.824433019123504
+Model 710|0.0037902029544435137|37.962433941423704|4/10|20|e^{\frac{Operating Cash Flow - \overline{Operating Cash Flow}}{\sigma_{Operating Cash Flow}}}|55.628527338366325|62.83677271723205
+Model 711|0.0036653483001113877|38.00390163520013|4/10|19|Operating Cash Flow growth^3|50.093762062668645|37.55507810384484
+Model 711|0.003786501805731296|37.96381035380288|4/10|19|Operating Cash Flow growth^3|52.60017624420273|62.811117317408694
+Model 711|0.003786501805731296|37.96381035380288|4/10|19|Operating Cash Flow growth^3|52.60017624420273|62.811117317408694
+Model 711|0.0037883160656828428|37.96464881930723|4/10|19|Operating Cash Flow growth^3|52.686321266948255|62.84422053677422
+Model 712|0.00366948359916473|38.00702690984277|4/10|18|e^{\frac{Total assets - \overline{Total assets}}{\sigma_{Total assets}}}|42.383262999431096|37.551980392239535
+Model 712|0.0037796061261265563|37.96709038326155|4/10|18|e^{\frac{Total assets - \overline{Total assets}}{\sigma_{Total assets}}}|42.6980548900734|62.810912899134486
+Model 712|0.0037796061261265563|37.96709038326155|4/10|18|e^{\frac{Total assets - \overline{Total assets}}{\sigma_{Total assets}}}|42.6980548900734|62.810912899134486
+Model 712|0.003781289181089474|37.96791112452722|4/10|18|e^{\frac{Total assets - \overline{Total assets}}{\sigma_{Total assets}}}|42.71017438493214|62.82949428888
+Model 713|0.00364754491617497|38.009061798839106|4/10|17|Capex to Depreciation^3|42.36417387144187|37.55489894619912
+Model 713|0.003776004304975458|37.96791153354376|4/10|17|Capex to Depreciation^3|42.676677262517806|62.83836770402294
+Model 713|0.003776004304975458|37.96791153354376|4/10|17|Capex to Depreciation^3|42.676677262517806|62.83836770402294
+Model 713|0.0037776828544705226|37.96876647229317|4/10|17|Capex to Depreciation^3|42.68929213383801|62.84613035702853
+Model 714|0.0035361588174690154|38.025803308191584|4/10|16|Payables Turnover^2|42.44699927322887|37.55889616195263
+Model 714|0.0036806596138807698|37.981365615790665|4/10|16|Payables Turnover^2|42.759281252611494|62.83506629324058
+Model 714|0.0036806596138807698|37.981365615790665|4/10|16|Payables Turnover^2|42.759281252611494|62.83506629324058
+Model 714|0.003682557658757115|37.98225590884599|4/10|16|Payables Turnover^2|42.772558446548075|62.8561856281773
+Model 715|0.0032775145319146426|38.046497500222834|4/10|15|EPS Growth^3|42.453249334547095|37.543222318199454
+Model 715|0.003379714494166175|38.00633342046619|4/10|15|EPS Growth^3|42.763264824452534|62.8300704702559
+Model 715|0.003379714494166175|38.00633342046619|4/10|15|EPS Growth^3|42.763264824452534|62.8300704702559
+Model 715|0.003381150553923298|38.00716128178114|4/10|15|EPS Growth^3|42.775124132084194|62.832778214041575
+Model 716|0.011019724405845846|38.35581418890582|3/10|14|POCF ratio|42.450782799116695|37.72586290507451
+Model 716|0.003374401215063326|38.00372283062688|4/10|14|POCF ratio|42.71112563661112|62.900049110781
+Model 716|0.003374401215063326|38.00372283062688|4/10|14|POCF ratio|42.71112563661112|62.900049110781
+Model 716|0.0033798367689422348|38.00723773529866|4/10|14|POCF ratio|42.76934445269196|62.94936728255264
+Model 717|0.025043054149257594|39.045169652777695|3/10|13|e^{\frac{Earnings Before Tax Margin - \overline{Earnings Before Tax Margin}}{\sigma_{Earnings Before Tax Margin}}}|42.40937927664125|35.805773239652225
+Model 717|0.003106462838427165|38.000275848356075|4/10|13|e^{\frac{Earnings Before Tax Margin - \overline{Earnings Before Tax Margin}}{\sigma_{Earnings Before Tax Margin}}}|42.61758322691506|61.28107478878845
+Model 717|0.003106462838427165|38.000275848356075|4/10|13|e^{\frac{Earnings Before Tax Margin - \overline{Earnings Before Tax Margin}}{\sigma_{Earnings Before Tax Margin}}}|42.61758322691506|61.28107478878845
+Model 717|0.0031159781596351377|38.00615673670572|4/10|13|e^{\frac{Earnings Before Tax Margin - \overline{Earnings Before Tax Margin}}{\sigma_{Earnings Before Tax Margin}}}|42.72405312107428|61.327924021897545
+Model 718|0.017485861268800744|38.72785310064058|3/10|12|EPS Growth^2|38.18493277521889|35.64197675022822
+Model 718|0.002676348777859931|38.03208553605806|4/10|12|EPS Growth^2|38.15731110644594|61.23039993782214
+Model 718|0.002676348777859931|38.03208553605806|4/10|12|EPS Growth^2|38.15731110644594|61.23039993782214
+Model 718|0.002682700645828717|38.03706190098888|4/10|12|EPS Growth^2|38.162886021914176|61.296301197205636
+Model 719|0.006278205229252427|38.103226695175195|4/10|11|PE ratio|38.155532882163|35.45321871662711
+Model 719|0.0026767371215291225|38.03491783723178|4/10|11|PE ratio|38.131048701739246|61.17605276919277
+Model 719|0.0026767371215291225|38.03491783723178|4/10|11|PE ratio|38.131048701739246|61.17605276919277
+Model 719|0.002680935744980007|38.03730048976056|4/10|11|PE ratio|38.13381296963458|61.20350748291342
+Model 720|0.002721484993424155|38.23629704912062|4/10|10|netProfitMargin|38.212007974620846|35.5833712347808
+Model 720|0.0019743886223420547|38.09731056179154|4/10|10|netProfitMargin|38.18788997584869|61.10251828457595
+Model 720|0.0019743886223420547|38.09731056179154|4/10|10|netProfitMargin|38.18788997584869|61.10251828457595
+Model 720|0.0019742744172922483|38.09877116556788|4/10|10|netProfitMargin|38.189505654612276|61.11410052351852
+Model 721|0.0018871988531826789|38.134175220990755|4/10|9|3Y Net Income Growth (per Share)^3|38.20349274598588|35.52882083488116
+Model 721|0.001676738801411049|38.09039627635012|4/10|9|3Y Net Income Growth (per Share)^3|38.179415419359344|61.09265687322738
+Model 721|0.001676738801411049|38.09039627635012|4/10|9|3Y Net Income Growth (per Share)^3|38.179415419359344|61.09265687322738
+Model 721|0.0016740432452545778|38.09084034777539|4/10|9|3Y Net Income Growth (per Share)^3|38.179957218153824|61.081198620994634
+Model 722|0.005691674313690177|38.18706605837939|3/10|8|e^{\frac{Acquisitions and disposals - \overline{Acquisitions and disposals}}{\sigma_{Acquisitions and disposals}}}|38.2194436618551|35.3955574121745
+Model 722|0.001525733601464141|38.10843534680872|4/10|8|e^{\frac{Acquisitions and disposals - \overline{Acquisitions and disposals}}{\sigma_{Acquisitions and disposals}}}|38.192468536553456|61.138254582669745
+Model 722|0.001525733601464141|38.10843534680872|4/10|8|e^{\frac{Acquisitions and disposals - \overline{Acquisitions and disposals}}{\sigma_{Acquisitions and disposals}}}|38.192468536553456|61.138254582669745
+Model 722|0.001515384438981355|38.11023404402145|4/10|8|e^{\frac{Acquisitions and disposals - \overline{Acquisitions and disposals}}{\sigma_{Acquisitions and disposals}}}|38.194628234995406|61.16825293055764
+Model 723|0.005524685421004025|38.18038897446469|3/10|7|Operating Income Growth|38.22276028886359|35.37076506105011
+Model 723|0.0015086917789799454|38.113236016915614|4/10|7|Operating Income Growth|38.19534539998976|61.12884953695299
+Model 723|0.0015086917789799454|38.113236016915614|4/10|7|Operating Income Growth|38.19534539998976|61.12884953695299
+Model 723|0.0015008911898247606|38.114919050556146|4/10|7|Operating Income Growth|38.19724061806223|61.15495938707645
+Model 724|0.0016794042628636091|38.25197045716041|3/10|6|e^{\frac{capitalExpenditureCoverageRatios - \overline{capitalExpenditureCoverageRatios}}{\sigma_{capitalExpenditureCoverageRatios}}}|38.22287505044145|35.58243836239639
+Model 724|0.0015003553894815795|38.11550602737188|3/10|6|e^{\frac{capitalExpenditureCoverageRatios - \overline{capitalExpenditureCoverageRatios}}{\sigma_{capitalExpenditureCoverageRatios}}}|38.196774772193706|61.08180786431126
+Model 724|0.0015003553894815795|38.11550602737188|3/10|6|e^{\frac{capitalExpenditureCoverageRatios - \overline{capitalExpenditureCoverageRatios}}{\sigma_{capitalExpenditureCoverageRatios}}}|38.196774772193706|61.08180786431126
+Model 724|0.0014988250890034295|38.116023535694715|3/10|6|e^{\frac{capitalExpenditureCoverageRatios - \overline{capitalExpenditureCoverageRatios}}{\sigma_{capitalExpenditureCoverageRatios}}}|38.19721810350857|61.09061173657054
+Model 725|0.0017233625256399844|38.08788833931053|4/10|5|Technology|38.17897685508737|35.449227371669764
+Model 725|0.0014726650020952278|38.11090326914982|4/10|5|Technology|38.14965717789251|61.09127091243695
+Model 725|0.0014726650020952278|38.11090326914982|4/10|5|Technology|38.14965717789251|61.09127091243695
+Model 725|0.0014708612031147207|38.11137308042106|4/10|5|Technology|38.14997617299214|61.07749251939598
+Model 726|0.0001698376754545504|38.20204951066856|4/10|4|e^{\frac{Net Current Asset Value - \overline{Net Current Asset Value}}{\sigma_{Net Current Asset Value}}}|38.288995595072194|35.68139503160017
+Model 726|0.00017417863664529143|38.217441817406424|4/10|4|e^{\frac{Net Current Asset Value - \overline{Net Current Asset Value}}{\sigma_{Net Current Asset Value}}}|38.2529988069357|60.28016222657989
+Model 726|0.00017417863664529143|38.217441817406424|4/10|4|e^{\frac{Net Current Asset Value - \overline{Net Current Asset Value}}{\sigma_{Net Current Asset Value}}}|38.2529988069357|60.28016222657989
+Model 726|0.00017436670414989875|38.21759764390268|4/10|4|e^{\frac{Net Current Asset Value - \overline{Net Current Asset Value}}{\sigma_{Net Current Asset Value}}}|38.2531240980274|60.29472367402794
+Model 727|0.0001191490335717412|38.354307305602624|4/10|3|e^{\frac{Utilities - \overline{Utilities}}{\sigma_{Utilities}}}|38.29369177063691|35.85092478132969
+Model 727|0.0001493317692518288|38.233003792506494|4/10|3|e^{\frac{Utilities - \overline{Utilities}}{\sigma_{Utilities}}}|38.25991175284915|60.1616605648998
+Model 727|0.0001493317692518288|38.233003792506494|4/10|3|e^{\frac{Utilities - \overline{Utilities}}{\sigma_{Utilities}}}|38.25991175284915|60.1616605648998
+Model 727|0.00014942169337063243|38.23327408335084|4/10|3|e^{\frac{Utilities - \overline{Utilities}}{\sigma_{Utilities}}}|38.26012243070512|60.158893629137964
+Model 728|5.856970626971059e-05|38.27929654234684|5/10|2|Utilities|38.29369177063691|35.779912496597284
+Model 728|7.133534892103571e-05|38.24684789228835|5/10|2|Utilities|38.26111959860115|35.82226802631866
+Model 728|7.133534892103571e-05|38.24684789228835|5/10|2|Utilities|38.26111959860115|35.82226802631866
+Model 728|7.142777136211765e-05|38.24701133463723|5/10|2|Utilities|38.26125593259114|35.8225930898489
