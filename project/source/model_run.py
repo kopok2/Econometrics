@@ -21,7 +21,7 @@ random.seed(0)
 
 
 def transform_heteroskedacity(x_data, y_data, residuals):
-    return x_data / np.sqrt(residuals ** 2), y_data / np.sqrt(residuals ** 2)
+    return x_data / np.sqrt(residuals ** 2).reshape(-1, 1), y_data / np.sqrt(residuals ** 2)
 
 
 def transform_autocorrelation(x_data, y_data, residuals):
@@ -95,10 +95,10 @@ if __name__ == '__main__':
             if model_auto.r2_score > 1:
                 raise LinAlgError
             print(f"Model {i} with autocorr|{model_auto.r2_score}|{model_auto.mae_score}|{model_auto.tests_passed}/{model_auto.tests_total}|{len(model_auto.params)}|{model_auto.least_important_param_name}|{mae_cv}|{mae_post}")
-            out_res.write(f"Model {i}|{model_auto.r2_score}|{model_auto.mae_score}|{model_auto.tests_passed}/{model_auto.tests_total}|{len(model_auto.params)}|{model_auto.least_important_param_name}|{mae_cv}|{mae_post}\n")
+            out_res.write(f"Model {i} with autocorr|{model_auto.r2_score}|{model_auto.mae_score}|{model_auto.tests_passed}/{model_auto.tests_total}|{len(model_auto.params)}|{model_auto.least_important_param_name}|{mae_cv}|{mae_post}\n")
             results.append((f"Model {i} with autocorr", model_auto, model_auto.r2_score, mae_cv, mae_post, model_auto.var_names, model_auto.tests_passed))
 
-            x_hete, y_hete = transform_autocorrelation(x_train.to_numpy(), y_train.to_numpy(), model.residuals)
+            x_hete, y_hete = transform_heteroskedacity(x_train.to_numpy(), y_train.to_numpy(), model.residuals)
             model_hete = OLS(x_hete, y_hete, var_names=x_train.columns, verbose=False, name=f'Model {i} with hete')
             model_hete.run_model()
             mae_cv = -cross_val_score(LinearRegression(), x_hete, y_hete, cv=5,
@@ -111,7 +111,7 @@ if __name__ == '__main__':
             print(
                 f"Model {i} with heteroskedacity|{model_hete.r2_score}|{model_hete.mae_score}|{model_hete.tests_passed}/{model_hete.tests_total}|{len(model_hete.params)}|{model_hete.least_important_param_name}|{mae_cv}|{mae_post}")
             out_res.write(
-                f"Model {i}|{model_hete.r2_score}|{model_hete.mae_score}|{model_hete.tests_passed}/{model_hete.tests_total}|{len(model_hete.params)}|{model_hete.least_important_param_name}|{mae_cv}|{mae_post}\n")
+                f"Model {i} with heteroskedacity|{model_hete.r2_score}|{model_hete.mae_score}|{model_hete.tests_passed}/{model_hete.tests_total}|{len(model_hete.params)}|{model_hete.least_important_param_name}|{mae_cv}|{mae_post}\n")
             results.append((f"Model {i} with heteroskedacity", model_hete, model_hete.r2_score, mae_cv, mae_post,
                             model_hete.var_names, model_hete.tests_passed))
 
@@ -128,7 +128,7 @@ if __name__ == '__main__':
             print(
                 f"Model {i} with heteroautocorr|{model_heau.r2_score}|{model_heau.mae_score}|{model_heau.tests_passed}/{model_heau.tests_total}|{len(model_heau.params)}|{model_heau.least_important_param_name}|{mae_cv}|{mae_post}")
             out_res.write(
-                f"Model {i}|{model_heau.r2_score}|{model_heau.mae_score}|{model_heau.tests_passed}/{model_heau.tests_total}|{len(model_heau.params)}|{model_heau.least_important_param_name}|{mae_cv}|{mae_post}\n")
+                f"Model {i} with heteroskedacity_and_autocorr|{model_heau.r2_score}|{model_heau.mae_score}|{model_heau.tests_passed}/{model_heau.tests_total}|{len(model_heau.params)}|{model_heau.least_important_param_name}|{mae_cv}|{mae_post}\n")
             results.append((f"Model {i} with heteroautocorr", model_heau, model_heau.r2_score, mae_cv, mae_post,
                             model_heau.var_names, model_heau.tests_passed))
 

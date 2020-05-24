@@ -78,44 +78,44 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{\numberline {7.2.1}Posta\IeC {\'c} modelu}{18}{subsubsection.7.2.1}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {7.2.2}Wyestymowane parametry modelu}{20}{subsubsection.7.2.2}% 
+\contentsline {subsubsection}{\numberline {7.2.2}Wyestymowane parametry modelu}{18}{subsubsection.7.2.2}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {7.2.3}Wska\IeC {\'z}niki jako\IeC {\'s}ci modelu}{22}{subsubsection.7.2.3}% 
+\contentsline {subsubsection}{\numberline {7.2.3}Wska\IeC {\'z}niki jako\IeC {\'s}ci modelu}{18}{subsubsection.7.2.3}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {7.2.4}Weryfikacja poprawno\IeC {\'s}ci modelu}{22}{subsubsection.7.2.4}% 
+\contentsline {subsubsection}{\numberline {7.2.4}Koincydencja}{18}{subsubsection.7.2.4}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {7.2.5}Koincydencja}{22}{subsubsection.7.2.5}% 
+\contentsline {subsubsection}{\numberline {7.2.5}Katalizatory}{19}{subsubsection.7.2.5}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {7.2.6}Katalizatory}{28}{subsubsection.7.2.6}% 
+\contentsline {subsubsection}{\numberline {7.2.6}Wsp\IeC {\'o}\IeC {\l }liniowo\IeC {\'s}\IeC {\'c} zmiennych}{19}{subsubsection.7.2.6}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {7.2.7}Wsp\IeC {\'o}\IeC {\l }liniowo\IeC {\'s}\IeC {\'c} zmiennych}{47}{subsubsection.7.2.7}% 
+\contentsline {subsubsection}{\numberline {7.2.7}Normalno\IeC {\'s}\IeC {\'c} rozk\IeC {\l }adu reszt}{19}{subsubsection.7.2.7}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {7.2.8}Normalno\IeC {\'s}\IeC {\'c} rozk\IeC {\l }adu reszt}{50}{subsubsection.7.2.8}% 
+\contentsline {subsubsection}{\numberline {7.2.8}Istotno\IeC {\'s}\IeC {\'c} zmiennych obja\IeC {\'s}niaj\IeC {\k a}cych}{19}{subsubsection.7.2.8}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {7.2.9}Istotno\IeC {\'s}\IeC {\'c} zmiennych obja\IeC {\'s}niaj\IeC {\k a}cych}{50}{subsubsection.7.2.9}% 
+\contentsline {subsubsection}{\numberline {7.2.9}Istotno\IeC {\'s}\IeC {\'c} wsp\IeC {\'o}\IeC {\l }czynnika determinacji}{20}{subsubsection.7.2.9}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {7.2.10}Istotno\IeC {\'s}\IeC {\'c} wsp\IeC {\'o}\IeC {\l }czynnika determinacji}{57}{subsubsection.7.2.10}% 
+\contentsline {subsubsection}{\numberline {7.2.10}Liniowo\IeC {\'s}\IeC {\'c} postaci modelu}{20}{subsubsection.7.2.10}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {7.2.11}Liniowo\IeC {\'s}\IeC {\'c} postaci modelu}{57}{subsubsection.7.2.11}% 
+\contentsline {subsubsection}{\numberline {7.2.11}Stabilno\IeC {\'s}\IeC {\'c} parametr\IeC {\'o}w modelu}{20}{subsubsection.7.2.11}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {7.2.12}Stabilno\IeC {\'s}\IeC {\'c} parametr\IeC {\'o}w modelu}{57}{subsubsection.7.2.12}% 
+\contentsline {subsubsection}{\numberline {7.2.12}Homoskedastyczno\IeC {\'s}\IeC {\'c}}{20}{subsubsection.7.2.12}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {7.2.13}Homoskedastyczno\IeC {\'s}\IeC {\'c}}{58}{subsubsection.7.2.13}% 
+\contentsline {subsubsection}{\numberline {7.2.13}Autokorelacja czynnika losowego I rz\IeC {\k e}du}{20}{subsubsection.7.2.13}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {7.2.14}Autokorelacja czynnika losowego I rz\IeC {\k e}du}{58}{subsubsection.7.2.14}% 
+\contentsline {subsubsection}{\numberline {7.2.14}Wynik weryfikacji poprawno\IeC {\'s}ci modelu}{20}{subsubsection.7.2.14}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {7.2.15}Wynik weryfikacji poprawno\IeC {\'s}ci modelu}{58}{subsubsection.7.2.15}% 
+\contentsline {subsection}{\numberline {7.3}Model analityczny}{21}{subsection.7.3}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {7.3}Model analityczny}{58}{subsection.7.3}% 
+\contentsline {subsection}{\numberline {7.4}Uwagi}{21}{subsection.7.4}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {8}Prognoza}{58}{section.8}% 
+\contentsline {section}{\numberline {8}Prognoza i interpretacja}{21}{section.8}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {9}Interpretacja}{58}{section.9}% 
+\contentsline {section}{\numberline {9}Por\IeC {\'o}wnanie z modelami uczenia maszynowego}{22}{section.9}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {10}Podsumowanie}{58}{section.10}% 
+\contentsline {section}{\numberline {10}Podsumowanie}{23}{section.10}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {11}Spis tabel}{59}{section.11}% 
+\contentsline {section}{\numberline {11}Spis tabel}{24}{section.11}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {12}Spis rysunk\IeC {\'o}w}{60}{section.12}% 
+\contentsline {section}{\numberline {12}Spis rysunk\IeC {\'o}w}{25}{section.12}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {13}Literatura}{61}{section.13}% 
+\contentsline {section}{\numberline {13}Literatura}{26}{section.13}% 

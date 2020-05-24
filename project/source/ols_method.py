@@ -108,10 +108,10 @@ class OLS:
         Run model inference and validation.
         """
         self.fit(None, None)
-        self.validate()
-        #self.parameters_significance_test()
-        #if self.tests_passed:
-        #    self.tests_passed = 0
+        #self.validate()
+        self.parameters_significance_test()
+        if self.tests_passed:
+            self.tests_passed = 0
 
     def fit(self, _1, _2):
         """
@@ -132,7 +132,7 @@ class OLS:
             self.ltw(f'\\[\\alpha_{{{i}}} = {param}\\]\n')
         self.ltw('\\subsection{Wskaźniki jakości modelu}\n')
         self.ltw(f'Współczynnik determinacji ~$R^2 = {self.r2_score}$\n\n')
-        self.ltw(f'Średni absolutny błąd prognozy \\textit{{ex post}} ~$MAE = {self.mae_score}$\n')
+        self.ltw(f'Średni absolutny błąd prognozy \\textit{{ex ante}} ~$MAE = {self.mae_score}$\n')
 
     def predict(self, x_data):
         """
@@ -186,7 +186,6 @@ class OLS:
         return result
 
     @statistical_test
-    @skip
     def catalizator_test(self):
         r_matrix = np.corrcoef(self.x_data.T)
         r0_vector = [np.corrcoef(self.x_data[:, i], self.y_data)[0][1] for i in range(self.k)]
@@ -212,7 +211,6 @@ class OLS:
         return result
 
     @statistical_test
-    @skip
     def colinearity_test(self):
         result = True
         mx = 0

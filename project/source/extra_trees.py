@@ -22,7 +22,7 @@ if __name__ == '__main__':
     data = pd.read_csv(IN_DATA_PATH)
     Y = data['PriceChange']
     X = data.drop('PriceChange', axis=1)
-    X_train, X_test, Y_train, Y_test = train_test_split(X, Y, test_size=0.1)
+    X_train, X_test, Y_train, Y_test = train_test_split(X, Y, test_size=0.1, random_state=0)
     for mc in [ExtraTreesRegressor,
                LinearRegression,
                KNeighborsRegressor,
