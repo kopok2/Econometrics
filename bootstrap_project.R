@@ -1,6 +1,6 @@
 # packages
 library("LaplacesDemon")
-library("piecewiseSEM")
+library("tsoutliers")
 
 # constants
 n_bootstrap = 40
@@ -25,6 +25,9 @@ model <- lm(y ~ x1 + x2 + x3 , data = data)
 params <- model$coefficients
 y_hat <- params["(Intercept)"] + params["x1"] * x1 + params["x2"] * x2 + params["x3"] * x3
 e <- resid(model)
+y_mean_vec <- rep(mean(y), data_len)
+r2 <- summary(model)$r.squared
+summary(model)
 
 # 1. sample residuals
 print("Losowanie reszt")
@@ -32,6 +35,7 @@ sample_1_a0 <- 1:n_bootstrap
 sample_1_a1 <- 1:n_bootstrap
 sample_1_a2 <- 1:n_bootstrap
 sample_1_a3 <- 1:n_bootstrap
+sample_1_r2 <- 1:n_bootstrap
 
 for(i in 1:n_bootstrap)
 {
@@ -44,6 +48,7 @@ for(i in 1:n_bootstrap)
   sample_1_a1[i] <- params_1["x1"]
   sample_1_a2[i] <- params_1["x2"]
   sample_1_a3[i] <- params_1["x3"]
+  sample_1_r2[i] <- summary(model_1)$r.squared
 }
 
 print("Przedzialy ufnosci empiryczne:")
@@ -51,6 +56,7 @@ p.interval(sample_1_a0)
 p.interval(sample_1_a1)
 p.interval(sample_1_a2)
 p.interval(sample_1_a3)
+p.interval(sample_1_r2)
 
 print("Przedzialy ufnosci wg teorii:")
 t.test(sample_1_a0)$conf.int
@@ -66,6 +72,8 @@ hist(sample_1_a2, probability = TRUE)
 lines(density(sample_1_a2), lwd=4, col = 'red')
 hist(sample_1_a3, probability = TRUE)
 lines(density(sample_1_a3), lwd=4, col = 'red')
+hist(sample_1_r2, probability = TRUE)
+lines(density(sample_1_r2), lwd=4, col = 'red')
 
 # 2. sample pairs
 print("Losowanie par (y, x)")
@@ -73,6 +81,7 @@ sample_2_a0 <- 1:n_bootstrap
 sample_2_a1 <- 1:n_bootstrap
 sample_2_a2 <- 1:n_bootstrap
 sample_2_a3 <- 1:n_bootstrap
+sample_2_r2 <- 1:n_bootstrap
 
 for(i in 1:n_bootstrap)
 {
@@ -83,6 +92,7 @@ for(i in 1:n_bootstrap)
   sample_2_a1[i] <- params_2["x1"]
   sample_2_a2[i] <- params_2["x2"]
   sample_2_a3[i] <- params_2["x3"]
+  sample_2_r2[i] <- summary(model_2)$r.squared
 }
 
 print("Przedzialy ufnosci empiryczne:")
@@ -90,6 +100,7 @@ p.interval(sample_2_a0)
 p.interval(sample_2_a1)
 p.interval(sample_2_a2)
 p.interval(sample_2_a3)
+p.interval(sample_2_r2)
 
 print("Przedzialy ufnosci wg teorii:")
 t.test(sample_2_a0)$conf.int
@@ -105,3 +116,11 @@ hist(sample_2_a2, probability = TRUE)
 lines(density(sample_2_a2), lwd=4, col = 'red')
 hist(sample_2_a3, probability = TRUE)
 lines(density(sample_2_a3), lwd=4, col = 'red')
+hist(sample_2_r2, probability = TRUE)
+lines(density(sample_2_r2), lwd=4, col = 'red')
+
+# other
+summary(e)
+hist(e, probability = TRUE)
+lines(density(e), lwd=4, col = 'red')
+jarque.bera.test
