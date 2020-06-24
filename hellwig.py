@@ -6,6 +6,7 @@ def hellwig(corr, cov, n):
     res = []
     for i in range(1, 2 ** n):
         comb = "0" * (n - len((bin(i)[2:]))) + bin(i)[2:]
+        print(comb)
         integral_capacity = 0
         for j in range(n):
             if comb[j] == "1":
@@ -15,6 +16,9 @@ def hellwig(corr, cov, n):
                         ss += abs(cov[j, k])
                 h = (corr[j] ** 2) / ss
                 integral_capacity += h
+                print(h)
+        print("Integral")
+        print(integral_capacity)
         res.append((comb, integral_capacity))
     res.sort(key=itemgetter(1), reverse=True)
     return res[0]
@@ -27,7 +31,7 @@ if __name__ == '__main__':
                                [.14, -.13, 1.0, - .03],
                                [.41, -.55, -.03, 1.0]])
     print("x1 x2 x3 x4 | Rozwiązanie: (0 - bez zmiennej, 1 - umiesc zmienna)")
-    print(hellwig(corr_vector, cov_matrix, 4))
+    print(hellwig(corr_vector, cov_matrix, corr_vector.shape[0]))
 
 """
 0001 0.3968999981880188
