@@ -1,6 +1,8 @@
 # packages
 library("LaplacesDemon")
-library("tsoutliers")
+library("tseries")
+library("lmtest")
+library("car")
 
 # constants
 n_bootstrap = 40
@@ -123,4 +125,6 @@ lines(density(sample_2_r2), lwd=4, col = 'red')
 summary(e)
 hist(e, probability = TRUE)
 lines(density(e), lwd=4, col = 'red')
-jarque.bera.test
+jarque.bera.test(e)
+gqtest(model)
+durbinWatsonTest(model)
